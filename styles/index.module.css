@@ -1,0 +1,137 @@
+.background {
+  height: 500px;
+  background: url('/images/home/background.png') center center/cover no-repeat fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  text-align: center;
+  z-index: 1;
+  color: #ffffff ;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4DE287;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #2e8851;
+}
+
+.mainContent {
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+}
+
+.mainContent h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.mainContent p {
+  color: #333;
+  font-size: 1rem;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+}
+
+@media (max-width: 600px) {
+  .description {
+    gap: 20px;
+  }
+}
+
+.description img {
+  width: 50%;
+  height: 50%;
+}
+
+.description p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.description h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.description button {
+  background-color: #3b444b;
+  color: #ffffff;
+}
+
+.comments {
+  font-style: italic;
+  color: #ffffff !important;
+}
+
+.commentAuthor {
+  font-weight: bold;
+  color: rgba(208, 212, 241, 0.78) !important;
+  font-size: 1rem;
+}
+
+.footer {
+  margin-top: 40px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+}
+
+.contact, .socialMedia, .copyright {
+  margin-bottom: 10px;
+}
+
+.contact p, .socialMedia a {
+  margin: 5px 0;
+  color: lightblue;
+}
+
+.socialMedia a {
+  color: lightblue;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.socialMedia a:hover {
+  text-decoration: underline;
+}
+
+.copyright p {
+  color: #ffffff;
+}
