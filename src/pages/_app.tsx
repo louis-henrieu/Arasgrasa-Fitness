@@ -1,6 +1,3 @@
-// ** React Imports
-import { ReactNode } from 'react'
-
 // ** Next Imports
 import Head from 'next/head'
 import { Router } from 'next/router'
@@ -20,7 +17,6 @@ import type { EmotionCache } from '@emotion/cache'
 
 // ** Config Imports
 import 'src/configs/i18n'
-import { defaultACLObj } from 'src/configs/acl'
 import themeConfig from 'src/configs/themeConfig'
 
 // ** Fake-DB Import
@@ -94,13 +90,13 @@ const App = (props: ExtendedAppProps) => {
     <Provider store={store}>
       <CacheProvider value={emotionCache}>
         <Head>
-          <title>{`${themeConfig.templateName} - Material Design React Admin Template`}</title>
+          <title>{`${themeConfig.templateName}`}</title>
           <meta
             name='description'
-            content={`${themeConfig.templateName} – Material Design React Admin Dashboard Template – is the most developer friendly & highly customizable Admin Dashboard Template based on MUI v5.`}
+            content={`${themeConfig.templateName} Fitness - The ultimate fitness experience`}
           />
-          <meta name='keywords' content='Material Design, MUI, Admin Template, React Admin Template' />
-          <meta name='viewport' content='initial-scale=1, width=device-width' />
+          <meta name='keywords' content='fitness, gym, workout, yoga, bodybuilding, health, cardio, nutrition, arasgrasa, arasgrasa fitness, energy drink, sport performance, sport nutrition, sport drink, vitamins' />
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
         </Head>
 
           <SettingsProvider {...(setConfig ? { pageSettings: setConfig() } : {})}>

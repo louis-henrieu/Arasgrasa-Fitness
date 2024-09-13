@@ -16,6 +16,8 @@ import NotificationDropdown, {
   NotificationsType
 } from 'src/@core/layouts/components/shared-components/NotificationDropdown'
 import ShortcutsDropdown, { ShortcutsType } from 'src/@core/layouts/components/shared-components/ShortcutsDropdown'
+import Badge from '@mui/material/Badge'
+import Typography from '@mui/material/Typography'
 
 interface Props {
   hidden: boolean
@@ -126,18 +128,50 @@ const AppBarContent = (props: Props) => {
 
   // ** Hook
 
+  const onClickHome = () => {
+    window.location.href = '/'
+  }
+
+  const onClickBlog = () => {
+    window.location.href = '/blog'
+  }
+
+  const onClickProduct = () => {
+    window.location.href = '/product'
+  }
+
   return (
     <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
       <Box className='actions-left' sx={{ mr: 2, display: 'flex', alignItems: 'center' }}>
-        {hidden && !settings.navHidden ? (
-          <IconButton color='inherit' sx={{ ml: -2.75 }} onClick={toggleNavVisibility}>
-            <Icon fontSize='1.5rem' icon='tabler:menu-2' />
-          </IconButton>
-        ) : null}
-        <Autocomplete hidden={hidden} settings={settings} />
+        <Box sx={{ width: '1rem' }} />
+        <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickHome}>
+          Home
+        </Typography>
+        <Box sx={{ width: '2rem' }} />
+        <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickProduct}>
+          Products
+        </Typography>
+        <Box sx={{ width: '2rem' }} />
+        <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickBlog}>
+          Blog
+        </Typography>
+        {/* <Box sx={{ width: '2rem' }} />
+        <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+          Training plans
+        </Typography> */}
+        <Box sx={{ width: '2rem' }} />
+        <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+          About us
+        </Typography>
+        <Box sx={{ width: '2rem' }} />
+        <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+          Contact
+        </Typography>
+
+
+
       </Box>
       <Box className='actions-right' sx={{ display: 'flex', alignItems: 'center' }}>
-        <LanguageDropdown settings={settings} saveSettings={saveSettings} />
         <ModeToggler settings={settings} saveSettings={saveSettings} />
         <ShortcutsDropdown settings={settings} shortcuts={shortcuts} />
         <NotificationDropdown settings={settings} notifications={notifications} />
