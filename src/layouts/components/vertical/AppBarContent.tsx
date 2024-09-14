@@ -1,6 +1,11 @@
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import IconButton from '@mui/material/IconButton'
+import HomeIcon from '@mui/icons-material/Home'
+import BookIcon from '@mui/icons-material/Book'
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket'
+import InfoIcon from '@mui/icons-material/Info'
+import ContactMailIcon from '@mui/icons-material/ContactMail'
 
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
@@ -18,6 +23,7 @@ import NotificationDropdown, {
 import ShortcutsDropdown, { ShortcutsType } from 'src/@core/layouts/components/shared-components/ShortcutsDropdown'
 import Badge from '@mui/material/Badge'
 import Typography from '@mui/material/Typography'
+import { useMediaQuery, useTheme } from '@mui/material'
 
 interface Props {
   hidden: boolean
@@ -25,51 +31,6 @@ interface Props {
   toggleNavVisibility: () => void
   saveSettings: (values: Settings) => void
 }
-
-const notifications: NotificationsType[] = [
-  {
-    meta: 'Today',
-    avatarAlt: 'Flora',
-    title: 'Congratulation Flora! 🎉',
-    avatarImg: '/images/avatars/4.png',
-    subtitle: 'Won the monthly best seller badge'
-  },
-  {
-    meta: 'Yesterday',
-    avatarColor: 'primary',
-    subtitle: '5 hours ago',
-    avatarText: 'Robert Austin',
-    title: 'New user registered.'
-  },
-  {
-    meta: '11 Aug',
-    avatarAlt: 'message',
-    title: 'New message received 👋🏻',
-    avatarImg: '/images/avatars/5.png',
-    subtitle: 'You have 10 unread messages'
-  },
-  {
-    meta: '25 May',
-    title: 'Paypal',
-    avatarAlt: 'paypal',
-    subtitle: 'Received Payment',
-    avatarImg: '/images/misc/paypal.png'
-  },
-  {
-    meta: '19 Mar',
-    avatarAlt: 'order',
-    title: 'Received Order 📦',
-    avatarImg: '/images/avatars/3.png',
-    subtitle: 'New order received from John'
-  },
-  {
-    meta: '27 Dec',
-    avatarAlt: 'chart',
-    subtitle: '25 hrs ago',
-    avatarImg: '/images/misc/chart.png',
-    title: 'Finance report has been generated'
-  }
-]
 
 const shortcuts: ShortcutsType[] = [
   {
@@ -126,6 +87,9 @@ const AppBarContent = (props: Props) => {
   // ** Props
   const { hidden, settings, saveSettings, toggleNavVisibility } = props
 
+  const theme = useTheme()
+  const isMatch = useMediaQuery(theme.breakpoints.down('md'))
+
   // ** Hook
 
   const onClickHome = () => {
@@ -143,38 +107,155 @@ const AppBarContent = (props: Props) => {
   return (
     <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
       <Box className='actions-left' sx={{ mr: 2, display: 'flex', alignItems: 'center' }}>
-        <Box sx={{ width: '1rem' }} />
-        <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickHome}>
-          Home
-        </Typography>
-        <Box sx={{ width: '2rem' }} />
-        <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickProduct}>
-          Products
-        </Typography>
-        <Box sx={{ width: '2rem' }} />
-        <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickBlog}>
-          Blog
-        </Typography>
+        {isMatch ? (
+          <IconButton
+            size='large'
+            aria-label='home'
+            aria-controls='menu-appbar'
+            aria-haspopup='true'
+            onClick={onClickHome}
+            color='inherit'
+          >
+            <HomeIcon />
+          </IconButton>
+        ) : (
+          <>
+            <Box sx={{ width: '1rem' }} />
+            <Typography
+              variant='h6'
+              sx={{
+                cursor: 'pointer',
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between'
+              }}
+              onClick={onClickHome}
+            >
+              Home
+            </Typography>
+          </>
+        )}
+        {isMatch ? (
+          <IconButton
+            size='large'
+            aria-label='products'
+            aria-controls='menu-appbar'
+            aria-haspopup='true'
+            onClick={onClickProduct}
+            color='inherit'
+          >
+            <ShoppingBasketIcon />
+          </IconButton>
+        ) : (
+          <>
+            <Box sx={{ width: '2rem' }} />
+            <Typography
+              variant='h6'
+              sx={{
+                cursor: 'pointer',
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between'
+              }}
+              onClick={onClickProduct}
+            >
+              Products
+            </Typography>
+          </>
+        )}
+        {isMatch ? (
+          <IconButton
+            size='large'
+            aria-label='blog'
+            aria-controls='menu-appbar'
+            aria-haspopup='true'
+            onClick={onClickBlog}
+            color='inherit'
+          >
+            <BookIcon />
+          </IconButton>
+        ) : (
+          <>
+            <Box sx={{ width: '2rem' }} />
+            <Typography
+              variant='h6'
+              sx={{
+                cursor: 'pointer',
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between'
+              }}
+              onClick={onClickBlog}
+            >
+              Blog
+            </Typography>
+          </>
+        )}
         {/* <Box sx={{ width: '2rem' }} />
         <Typography variant='h6' sx={{ cursor: 'pointer' }}>
           Training plans
         </Typography> */}
-        <Box sx={{ width: '2rem' }} />
-        <Typography variant='h6' sx={{ cursor: 'pointer' }}>
-          About us
-        </Typography>
-        <Box sx={{ width: '2rem' }} />
-        <Typography variant='h6' sx={{ cursor: 'pointer' }}>
-          Contact
-        </Typography>
-
-
-
+        {isMatch ? (
+          <IconButton
+            size='large'
+            aria-label='About us'
+            aria-controls='menu-appbar'
+            aria-haspopup='true'
+            color='inherit'
+          >
+            <InfoIcon />
+          </IconButton>
+        ) : (
+          <>
+            <Box sx={{ width: '2rem' }} />
+            <Typography
+              variant='h6'
+              sx={{
+                cursor: 'pointer',
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between'
+              }}
+            >
+              About us
+            </Typography>
+          </>
+        )}
+        {isMatch ? (
+          <IconButton
+            size='large'
+            aria-label='contact'
+            aria-controls='menu-appbar'
+            aria-haspopup='true'
+            onClick={onClickHome}
+            color='inherit'
+          >
+            <ContactMailIcon />
+          </IconButton>
+        ) : (
+          <>
+            <Box sx={{ width: '2rem' }} />
+            <Typography
+              variant='h6'
+              sx={{
+                cursor: 'pointer',
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between'
+              }}
+            >
+              Contact
+            </Typography>
+          </>
+        )}
       </Box>
       <Box className='actions-right' sx={{ display: 'flex', alignItems: 'center' }}>
         <ModeToggler settings={settings} saveSettings={saveSettings} />
-        <ShortcutsDropdown settings={settings} shortcuts={shortcuts} />
-        <NotificationDropdown settings={settings} notifications={notifications} />
       </Box>
     </Box>
   )
