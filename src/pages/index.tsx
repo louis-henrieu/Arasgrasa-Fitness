@@ -72,9 +72,9 @@ const Home = () => {
           </div>
           <div className={styles.socialMedia}>
             <h3>Follow Us</h3>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="https://instagram.com/arasgrasa" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <Typography href="https://facebook.com" target="_blank" component={StyledCompanyName}>Facebook</Typography>
+            <Typography href="https://twitter.com" target="_blank" component={StyledCompanyName}>Twitter</Typography>
+            <Typography href="https://instagram.com/arasgrasa" target="_blank" component={StyledCompanyName}>Instagram</Typography>
           </div>
         </div>
       </footer>
