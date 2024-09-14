@@ -37,22 +37,6 @@
   background-color: #2e8851;
 }
 
-.mainContent {
-  padding: 50px;
-  text-align: center;
-  background-color: white;
-}
-
-.mainContent h2 {
-  font-size: 2rem;
-  color: #333;
-}
-
-.mainContent p {
-  color: #333;
-  font-size: 1rem;
-}
-
 .description {
   display: flex;
   justify-content: center;
@@ -73,28 +57,10 @@
 
 .description p {
   font-size: 1rem;
-  color: #333;
-}
-
-.description h2 {
-  font-size: 2rem;
-  color: #333;
 }
 
 .description button {
-  background-color: #3b444b;
-  color: #ffffff;
-}
-
-.comments {
-  font-style: italic;
-  color: #ffffff !important;
-}
-
-.commentAuthor {
-  font-weight: bold;
-  color: rgba(208, 212, 241, 0.78) !important;
-  font-size: 1rem;
+  background-color: #4DE287;
 }
 
 .footer {
@@ -119,11 +85,11 @@
 
 .contact p, .socialMedia a {
   margin: 5px 0;
-  color: lightblue;
+  color: #7367F0 !important;
 }
 
 .socialMedia a {
-  color: lightblue;
+  color: #7367F0 !important;
   text-decoration: none;
   margin: 0 10px;
 }
