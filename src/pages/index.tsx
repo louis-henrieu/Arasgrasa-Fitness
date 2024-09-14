@@ -64,13 +64,13 @@ const Home = () => {
       </Grid>
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
-          <div className={styles.contact}>
+          <div>
             <h3>Contact Us</h3>
             <Typography href='mailto:contact@arasgrasa.com' target='_blank' component={StyledCompanyName}>Email: contact@arasgrasa.com </Typography>
             <br/>
             <Typography href='tel:+1234567890' target='_blank' component={StyledCompanyName}>Phone: +123 456 7890</Typography>
           </div>
-          <div className={styles.socialMedia}>
+          <div>
             <h3>Follow Us</h3>
             <Typography href="https://facebook.com" target="_blank" component={StyledCompanyName}>Facebook</Typography>
             <Typography href="https://twitter.com" target="_blank" component={StyledCompanyName}>Twitter</Typography>
