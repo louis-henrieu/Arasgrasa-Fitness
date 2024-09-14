@@ -15,7 +15,6 @@ import {
   AppBar,
   Footer,
   ContentWidth,
-  VerticalNavToggle,
   HorizontalMenuToggle
 } from 'src/@core/layouts/types'
 
@@ -40,7 +39,6 @@ type ThemeConfig = {
   collapsedNavigationSize: number
   horizontalMenuAnimation: boolean
   layout: 'vertical' | 'horizontal'
-  verticalNavToggleType: VerticalNavToggle
   horizontalMenuToggle: HorizontalMenuToggle
   afterVerticalNavMenuContentPosition: 'fixed' | 'static'
   beforeVerticalNavMenuContentPosition: 'fixed' | 'static'
@@ -49,7 +47,7 @@ type ThemeConfig = {
 
 const themeConfig: ThemeConfig = {
   // ** Layout Configs
-  templateName: 'Arasgrasa' /* App Name */,
+  templateName: 'Arasgrasa Fitness' /* App Name */,
   layout: 'vertical' /* vertical | horizontal */,
   mode: 'light' as Mode /* light | dark | semi-dark /*! Note: semi-dark value will only work for Vertical Layout */,
   direction: 'ltr' /* ltr | rtl */,
@@ -64,7 +62,6 @@ const themeConfig: ThemeConfig = {
   navHidden: false /* true | false */,
   menuTextTruncate: true /* true | false */,
   navSubItemIcon: 'tabler:circle' /* Icon */,
-  verticalNavToggleType: 'accordion' /* accordion | collapse /*! Note: This is for Vertical navigation menu only */,
   navCollapsed: false /* true | false /*! Note: This is for Vertical navigation menu only */,
   navigationSize: 260 /* Number in px(Pixels) /*! Note: This is for Vertical navigation menu only */,
   collapsedNavigationSize: 82 /* Number in px(Pixels) /*! Note: This is for Vertical navigation menu only */,

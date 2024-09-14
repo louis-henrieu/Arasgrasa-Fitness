@@ -19,9 +19,6 @@ import type { EmotionCache } from '@emotion/cache'
 import 'src/configs/i18n'
 import themeConfig from 'src/configs/themeConfig'
 
-// ** Fake-DB Import
-import 'src/@fake-db'
-
 // ** Third Party Import
 import { Toaster } from 'react-hot-toast'
 
@@ -91,12 +88,25 @@ const App = (props: ExtendedAppProps) => {
       <CacheProvider value={emotionCache}>
         <Head>
           <title>{`${themeConfig.templateName}`}</title>
+          <meta charSet="utf-8"/>
+          <meta name="language" content="en"/>
+          <meta name="theme-color" content="#f8f7fa"/>
+          <meta name='title' content={`${themeConfig.templateName}`} />
           <meta
             name='description'
-            content={`${themeConfig.templateName} Fitness - The ultimate fitness experience`}
+            content={`The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products.`}
           />
+          <meta name='author' content='Arasgrasa Fitness' />
+          <meta name='robots' content='index, follow' />
+          <meta name='metadataBaseUri' content='https://www.arasgrasa.fr' />          
           <meta name='keywords' content='fitness, gym, workout, yoga, bodybuilding, health, cardio, nutrition, arasgrasa, arasgrasa fitness, energy drink, sport performance, sport nutrition, sport drink, vitamins' />
           <meta name='viewport' content='width=device-width, initial-scale=1' />
+          <link rel="canonical" href="https://www.arasgrasa.fr"/>
+          <meta property="og:title" content="Arasgrasa Fitness"/>
+          <meta property="og:description" content="The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products."/>
+          <meta property="og:image" content="https://www.arasgrasa.fr/images/flavicon.png"/>
+          <meta property="og:url" content="https://www.arasgrasa.fr"/>
+
         </Head>
 
           <SettingsProvider {...(setConfig ? { pageSettings: setConfig() } : {})}>

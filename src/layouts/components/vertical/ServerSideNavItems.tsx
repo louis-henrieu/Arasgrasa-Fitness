@@ -5,11 +5,10 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 
 // ** Type Import
-import { VerticalNavItemsType } from 'src/@core/layouts/types'
 
 const ServerSideNavItems = () => {
   // ** State
-  const [menuItems, setMenuItems] = useState<VerticalNavItemsType>([])
+  const [menuItems, setMenuItems] = useState<null>()
 
   useEffect(() => {
     axios.get('/api/vertical-nav/data').then(response => {
