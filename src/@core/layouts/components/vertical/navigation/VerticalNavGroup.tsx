@@ -81,7 +81,7 @@ const VerticalNavGroup = (props: Props) => {
   // ** Hooks & Vars
   const router = useRouter()
   const currentURL = router.asPath
-  const { direction, navCollapsed, verticalNavToggleType } = settings
+  const { direction, navCollapsed } = settings
 
   // ** Accordion menu group open toggle
   const toggleActiveGroup = (item: NavGroup, parent: NavGroup | undefined) => {
@@ -127,7 +127,7 @@ const VerticalNavGroup = (props: Props) => {
   // ** Menu Group Click
   const handleGroupClick = () => {
     const openGroup = groupActive
-    if (verticalNavToggleType === 'collapse') {
+    if (null === 'collapse') {
       if (openGroup.includes(item.title)) {
         openGroup.splice(openGroup.indexOf(item.title), 1)
       } else {
@@ -289,7 +289,6 @@ const VerticalNavGroup = (props: Props) => {
               {...props}
               parent={item}
               navVisible={navVisible}
-              verticalNavItems={item.children}
               isSubToSub={parent && item.children ? item : undefined}
             />
           </Collapse>

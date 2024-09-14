@@ -7,7 +7,7 @@ import CardMedia from '@mui/material/CardMedia'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import { useRouter } from 'next/router'
-import styles from '../../styles/index.module.css'
+import { color } from '@mui/system'
 
 const StyledCompanyName = styled(Link)(({ theme }) => ({
   fontWeight: 500,
@@ -20,21 +20,53 @@ const Home = () => {
 
   return (
     <div>
-      <div className={styles.background}>
-        <div className={styles.overlay}></div>
-        <div className={styles.content}>
+      <div style={{
+        height: '500px',
+        backgroundImage: 'url(/images/home/background.png)',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+      }}>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        }} />
+        <div style={{
+          zIndex: 1,
+          textAlign: 'center',
+          color: 'white',
+        }}>
           <h1>Unique fitness products for elves</h1>
           <p>Made out of natural and eco-friendly ingridients</p>
-          <button className={styles.button} onClick={() => router.push('/product')}>
+          <button style={{
+            marginTop: '20px',
+            padding: '10px 20px',
+            backgroundColor: '#4DE287',
+            border: 'none',
+            color: '#333',
+            fontSize: '16px',
+            cursor: 'pointer',
+            transition: 'background-color 0.3s',
+          }} onClick={() => router.push('/product')}>
             Buy Now !
           </button>
         </div>
       </div>
 
       <section>
-        <Grid className={styles.description} container>
+        <Grid style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '15%',
+        }} container>
           <Grid item xs={12} sm={6} md={4}>
-            <div className={styles.content}>
+            <div style={{ textAlign: 'center', zIndex: 1, color: 'white' }}>
               <Typography variant='h2' sx={{ marginBottom: '10px' }}>
                 About Us
               </Typography>
@@ -43,7 +75,16 @@ const Home = () => {
                 out of natural ingredients. Our main ingredient is Arasgrasa which is known to be extracted from a plant
                 that grows on Caldey Island in Wales. It is proved to be a very efficient stimulant on elves.
               </Typography>
-              <button className={styles.button} onClick={() => router.push('/blog')}>
+              <button style={{
+            marginTop: '20px',
+            padding: '10px 20px',
+            backgroundColor: '#4DE287',
+            border: 'none',
+            color: '#333',
+            fontSize: '16px',
+            cursor: 'pointer',
+            transition: 'background-color 0.3s',
+          }} onClick={() => router.push('/blog')}>
                 Learn more in our Blog
               </button>
             </div>
@@ -67,8 +108,20 @@ const Home = () => {
             </Card>
           </Grid>
         </Grid>
-        <footer className={styles.footer}>
-          <div className={styles.footerContent}>
+        <footer style={{
+          marginTop: '40px',
+          backgroundColor: '#333',
+          color: 'white',
+          padding: '20px',
+          textAlign: 'center',
+        }}>
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '15px',
+            color: 'white',
+          }}>
             <div>
               <h3>Contact Us</h3>
               <Typography href='mailto:contact@arasgrasa.com' target='_blank' component={StyledCompanyName}>

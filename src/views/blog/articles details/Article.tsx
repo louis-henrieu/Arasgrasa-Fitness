@@ -3,14 +3,13 @@ import { ContentArticleEnum } from 'src/types/ContentArticleEnum';
 import ImageArticle from './content type/Image'
 import TextArticle from './content type/Text'
 import VideoArticle from './content type/Video'
-import styles from '../../../../styles/article.module.css';
 import { display } from '@mui/system';
 
 const Article = ({article} : {article : ArticleTypes}) => {
   return (
     <div>
-      <div className={styles.mainContent}>
-        <h1 className={styles.mainContent}>{article.title}</h1>
+      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <h1 style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>{article.title}</h1>
         <img src={article.image} alt={article.title}/>
       </div>
       <div>

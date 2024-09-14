@@ -5,7 +5,6 @@ import Box from '@mui/material/Box'
 import { Settings } from 'src/@core/context/settingsContext'
 
 // ** Components
-import Autocomplete from 'src/layouts/components/Autocomplete'
 import ModeToggler from 'src/@core/layouts/components/shared-components/ModeToggler'
 import LanguageDropdown from 'src/@core/layouts/components/shared-components/LanguageDropdown'
 import NotificationDropdown, {
@@ -123,7 +122,6 @@ const AppBarContent = (props: Props) => {
 
   return (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
-      <Autocomplete hidden={hidden} settings={settings} />
       <ModeToggler settings={settings} saveSettings={saveSettings} />
       <ShortcutsDropdown settings={settings} shortcuts={shortcuts} />
       <NotificationDropdown settings={settings} notifications={notifications} />

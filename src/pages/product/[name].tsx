@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Products from "src/data/Products";
-import ProductDetail from "src/views/apps/products/details/ProductDetail";
+import ProductDetail from "src/views/products/details/ProductDetail";
 
 
 const Product = () => {

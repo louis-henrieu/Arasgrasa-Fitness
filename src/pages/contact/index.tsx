@@ -7,7 +7,6 @@ import Box, { BoxProps } from '@mui/material/Box'
 import Icon from 'src/@core/components/icon'
 import CustomChip from 'src/@core/components/mui/chip'
 import CustomAvatar from 'src/@core/components/mui/avatar'
-import styles from '../../..//styles/contact.module.css';
 
 const StyledBox1 = styled(Box)<BoxProps>(({ theme }) => ({
   display: 'flex',
@@ -35,7 +34,7 @@ const StyledCompanyName = styled(Link)(({ theme }) => ({
 
 const ContactUs = () => {
   return (
-    <Container className={styles.container}>
+    <Container sx={{ padding: '2rem' }}>
       <Box sx={{ mt: 13, textAlign: 'center' }}>
       <CustomChip rounded size='small' skin='light' color='primary' label='Question' />
       <Typography variant='h4' sx={{ my: 2 }}>
@@ -84,12 +83,12 @@ const ContactUs = () => {
       </Grid>
     </Box>
       
-    <Box className={styles.footer}>
-      <Typography variant="h2" className={styles.title}>
+    <Box sx={{ mt: '2rem', borderTop: '1px solid #ddd', pt: '1rem' }}>
+      <Typography variant="h2" sx={{ fontWeight: 700 }}>
           Contact Us
       </Typography>
-      <Box className={styles.footerContent}>
-        <Box className={styles.socialLinks}>
+      <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Box sx={{ ml: '1rem' }}>
           <Typography href="https://facebook.com" target="_blank" variant='body2' component={StyledCompanyName} sx={{marginRight: '10px'}}>Facebook</Typography>
           <br/>
           <Typography href="https://twitter.com" target="_blank" variant='body2' component={StyledCompanyName} sx={{marginRight: '10px'}}>Twitter</Typography>
