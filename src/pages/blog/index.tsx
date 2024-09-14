@@ -1,30 +1,23 @@
 import Grid from "@mui/material/Grid";
-import Article1 from "src/views/blog/articles list/Article1";
-import Article2 from "src/views/blog/articles list/Article2";
-import Article3 from "src/views/blog/articles list/Article3";
-import Article4 from "src/views/blog/articles list/Article4";
-import Article5 from "src/views/blog/articles list/Article5";
+import ArticleTypes from "src/types/ArticleTypes";
+import BlogInfo from "src/views/blog/articles list/BlogInfo";
+import Articles from "src/data/Articles";
 
 const BlogList = () => {
+
   return (
-    <Grid container spacing={6}>
-      <Grid item xs={12} sm={6} md={4}>
-        <Article1 />
+    <div>
+      <h1>Blog List</h1>
+      <Grid container spacing={6}>
+        {Articles.map((article: ArticleTypes) => (
+          <Grid item xs={12} md={6} lg={4} key={article.id}>
+            <BlogInfo key={article.id} article={article} />
+          </Grid>
+        ))}
       </Grid>
-      <Grid item xs={12} sm={6} md={4}>
-        <Article2 />
-      </Grid>
-      <Grid item xs={12} sm={6} md={4}>
-        <Article3 />
-      </Grid>
-      <Grid item xs={12} sm={6} md={4}>
-        <Article4 />
-      </Grid>
-      <Grid item xs={12} sm={6} md={4}>
-        <Article5 />
-      </Grid>
-    </Grid>
+    </div>
   );
+
 };
 
 export default BlogList;

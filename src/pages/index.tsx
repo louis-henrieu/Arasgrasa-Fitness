@@ -21,17 +21,12 @@ const Home = () => {
   const router = useRouter();
   return (
     <div>
-      <Head>
-        <title>Arasgrasa Fitness</title>
-        <meta name="description" content="Our Arasgrasa Fitness shop sells products to make you a stronger and healthier elf" />
-      </Head>
-
       <div className={styles.background}>
         <div className={styles.overlay}></div>
         <div className={styles.content}>
           <h1>Unique fitness products for elves</h1>
           <p>Made out of natural and eco-friendly ingridients</p>
-          <button className={styles.button} onClick={() => router.push('/product')}>Learn more</button>
+          <button className={styles.button} onClick={() => router.push('/product')}>Buy Now !</button>
         </div>
       </div>
 
@@ -79,7 +74,7 @@ const Home = () => {
             <h3>Follow Us</h3>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://instagram.com/arasgrasa" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
         </div>
       </footer>
