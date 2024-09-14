@@ -1,0 +1,74 @@
+.container {
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.contactSection {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.text {
+  line-height: 1.6;
+}
+
+.contactInfo {
+  margin-top: 1rem;
+}
+
+.contactLabel {
+  font-weight: bold;
+}
+
+.contactDetail {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contactDetail:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerTitle {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.footerLink {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+.socialLinks {
+  margin-left: 10px;
+}

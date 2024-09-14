@@ -434,7 +434,7 @@ const Products: ProductTypes[] = [
     composition: ['Cherry', 'Apple', 'Blueberry', 'Pineapple'],
     image: '/images/product/image7.jpeg',
     link: '',
-    price: 9.95,
+    price: 8.99,
     stock: 10,
     rating: 4,
     category: 'Drinks',
@@ -499,13 +499,13 @@ const Products: ProductTypes[] = [
     title: 'Sour Apple POP',
     description: {
       short:
-        'Vegan Protein Sparkling Water. This beverage that’s a refreshing alternative to traditional protein shakes. Featuring the same cutting-edge technology as our Clear Vegan Protein, our plant-based sparkling water is made from fruit juice and contains no artificial flavours or colours, and is packed with a vitamin B complex including pantothenic acid (vitamin B5) to support your mental performance1 and thiamine (vitamin B1)',
+        'Sour Apple is a refreshing alternative to traditional protein shakes. Featuring the same cutting-edge technology as our Clear Vegan Protein.',
       long: 'Vegan Protein Sparkling Water is a revolutionary beverage that’s a refreshing alternative to traditional protein shakes. Featuring the same cutting-edge technology as our Clear Vegan Protein, our plant-based sparkling water is made from fruit juice and contains no artificial flavours or colours, and is packed with a vitamin B complex including pantothenic acid (vitamin B5) to support your mental performance1 and thiamine (vitamin B1) to support your heart. Plus, our Vegan Protein Sparkling Water comes in a convenient 330ml can that’s 100% recyclable.'
     },
     composition: ['Cherry', 'Apple', 'Blueberry', 'Pineapple'],
     image: '/images/product/image8.jpeg',
     link: 'protein-shake',
-    price: 9.95,
+    price: 9,
     stock: 10,
     rating: 4,
     category: 'Drinks',
@@ -637,15 +637,15 @@ const Products: ProductTypes[] = [
   },
   {
     id: 9,
-    title: 'Energy Drink',
+    title: 'Energy Vitamins',
     description: {
-      short: 'Boost Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
+      short: 'Energy Vit.',
       long: 'Boost Energy Drink will help to become healthier and give you some extra energy for your daily workouts. It is a great drink for those who want to stay healthy and active. It is made from natural ingredients and has no artificial flavors or colors. It is also low in calories and sugar, so you can enjoy it without feeling guilty. Boost Energy Drink is a great way to get the energy you need to stay active and healthy.'
     },
     composition: ['Cherry', 'Apple', 'Blueberry', 'Pineapple'],
     image: '/images/product/image10.jpeg',
     link: 'energy-drink',
-    price: 9.95,
+    price: 7.45,
     stock: 10,
     rating: 4,
     category: 'Drinks',

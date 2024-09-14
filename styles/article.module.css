@@ -1,0 +1,15 @@
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iframeContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.mainContent h1 {
+  text-align: center;
+}
