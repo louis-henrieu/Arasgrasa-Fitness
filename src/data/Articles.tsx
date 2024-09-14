@@ -137,6 +137,22 @@ const Articles : ArticleTypes[] = [
         "link": null,
         "type": ContentArticleEnum.Text
       },
+      {
+        "id": 1,
+        "title": " Caffeine: Benefits ",
+        "description": "Dr. Honaker talks to us about some of the benefits of having caffeine. A few things such as increase of IQ, reduction in alzheimer's and even possible reduction in risks of cancer.",
+        "image": null,
+        "link": "https://www.youtube.com/embed/HRjqZhtmPig?si=EYVa5mDIbhj-Dn_8",
+        "type": ContentArticleEnum.Video
+      },
+      {
+        "id": 2,
+        "title": "What products contain vitamin B6 ?",
+        "description": "Coffee, espresso, tea, green tea, decaffeinated tea, energy drinks.",
+        "image": "/images/blog/caffeine.jpg",
+        "link": null,
+        "type": ContentArticleEnum.Image
+      },
     ]
   }
 ];
