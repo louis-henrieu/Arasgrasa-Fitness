@@ -1,11 +1,6 @@
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import IconButton from '@mui/material/IconButton'
-import HomeIcon from '@mui/icons-material/Home'
-import BookIcon from '@mui/icons-material/Book'
-import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket'
-import InfoIcon from '@mui/icons-material/Info'
-import ContactMailIcon from '@mui/icons-material/ContactMail'
 
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
@@ -116,22 +111,12 @@ const AppBarContent = (props: Props) => {
             onClick={onClickHome}
             color='inherit'
           >
-            <HomeIcon />
+            <Icon icon='tabler:home' />
           </IconButton>
         ) : (
           <>
-            <Box sx={{ width: '1rem' }} />
-            <Typography
-              variant='h6'
-              sx={{
-                cursor: 'pointer',
-                width: '100%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between'
-              }}
-              onClick={onClickHome}
-            >
+            <Box sx={{ minWidth: '2rem' }} />
+            <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickHome}>
               Home
             </Typography>
           </>
@@ -145,22 +130,12 @@ const AppBarContent = (props: Props) => {
             onClick={onClickProduct}
             color='inherit'
           >
-            <ShoppingBasketIcon />
+            <Icon icon='tabler:basket-plus' />
           </IconButton>
         ) : (
           <>
-            <Box sx={{ width: '2rem' }} />
-            <Typography
-              variant='h6'
-              sx={{
-                cursor: 'pointer',
-                width: '100%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between'
-              }}
-              onClick={onClickProduct}
-            >
+            <Box sx={{ minWidth: '2rem' }} />
+            <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickProduct}>
               Products
             </Typography>
           </>
@@ -174,22 +149,12 @@ const AppBarContent = (props: Props) => {
             onClick={onClickBlog}
             color='inherit'
           >
-            <BookIcon />
+            <Icon icon='tabler:brand-blogger' />
           </IconButton>
         ) : (
           <>
-            <Box sx={{ width: '2rem' }} />
-            <Typography
-              variant='h6'
-              sx={{
-                cursor: 'pointer',
-                width: '100%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between'
-              }}
-              onClick={onClickBlog}
-            >
+            <Box sx={{ minWidth: '2rem' }} />
+            <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickBlog}>
               Blog
             </Typography>
           </>
@@ -206,21 +171,12 @@ const AppBarContent = (props: Props) => {
             aria-haspopup='true'
             color='inherit'
           >
-            <InfoIcon />
+            <Icon icon='tabler:file-info' />
           </IconButton>
         ) : (
           <>
-            <Box sx={{ width: '2rem' }} />
-            <Typography
-              variant='h6'
-              sx={{
-                cursor: 'pointer',
-                width: '100%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between'
-              }}
-            >
+            <Box sx={{ minWidth: '2rem' }} />
+            <Typography variant='h6' sx={{ cursor: 'pointer' }}>
               About us
             </Typography>
           </>
@@ -234,21 +190,12 @@ const AppBarContent = (props: Props) => {
             onClick={onClickHome}
             color='inherit'
           >
-            <ContactMailIcon />
+            <Icon icon='tabler:mail' />
           </IconButton>
         ) : (
           <>
-            <Box sx={{ width: '2rem' }} />
-            <Typography
-              variant='h6'
-              sx={{
-                cursor: 'pointer',
-                width: '100%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between'
-              }}
-            >
+            <Box sx={{ minWidth: '2rem' }} />
+            <Typography variant='h6' sx={{ cursor: 'pointer' }}>
               Contact
             </Typography>
           </>
