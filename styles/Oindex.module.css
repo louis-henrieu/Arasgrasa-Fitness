@@ -1,0 +1,80 @@
+.background {
+  height: 500px;
+  background: url('/images/home/background.png') center center/cover no-repeat fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  text-align: center;
+  z-index: 1;
+  color: #ffffff ;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4DE287;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #2e8851;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+}
+
+@media (max-width: 600px) {
+  .description {
+    gap: 20px;
+  }
+}
+
+.description img {
+  width: 50%;
+  height: 50%;
+}
+
+.description p {
+  font-size: 1rem;
+}
+
+.description button {
+  background-color: #4DE287;
+}
+
+.footer {
+  margin-top: 40px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+}
