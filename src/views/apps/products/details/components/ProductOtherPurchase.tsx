@@ -1,4 +1,3 @@
-// ** React Imports
 import { MouseEvent, useState } from 'react'
 
 // ** MUI Imports
@@ -32,7 +31,7 @@ const StyledGrid = styled(Grid)<GridProps>(({ theme }) => ({
   }
 }))
 
-const ProductInfo = ({ product }: { product: ProductTypes }) => {
+const OtherProductInfo = ({ product }: { product: ProductTypes['others'][0] }) => {
   // ** State
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
 
@@ -47,7 +46,7 @@ const ProductInfo = ({ product }: { product: ProductTypes }) => {
 
   return (
     <Card>
-      <a href={product.link} target='_blank' rel='noreferrer' style={{ textDecoration: 'none' }}>
+      <a href={'/product/' + product.link} target='_blank' rel='noreferrer' style={{ textDecoration: 'none' }}>
         <Grid container spacing={6}>
           <StyledGrid item md={5} xs={12}>
               <CardContent sx={{ display: 'flex', alignItems: 'normal', justifyContent: 'normal' }}>
@@ -67,7 +66,7 @@ const ProductInfo = ({ product }: { product: ProductTypes }) => {
               <Typography variant='h5' sx={{ mb: 2 }}>
                 {product.title}
               </Typography>
-              <Typography sx={{ mb: 3.5, color: 'text.secondary' }}>{product.description.short}</Typography>
+              <Typography sx={{ mb: 3.5, color: 'text.secondary' }}>{product.description}</Typography>
               <Typography sx={{ fontWeight: 500, mb: 3 }}>
                 Price:{' '}
                 <Box component='span' sx={{ fontWeight: 'bold' }}>
@@ -127,4 +126,25 @@ const ProductInfo = ({ product }: { product: ProductTypes }) => {
   )
 }
 
-export default ProductInfo
+
+
+const ProductOtherPurchase = ({ products }: { products: ProductTypes['others'] }) => {
+  return (
+    <div>
+      <Typography variant='h4' sx={{ mb: 3, mt: 5 }}>
+        Other Products
+      </Typography>
+      <Grid container spacing={6}>
+      {/* <div className='grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3'> */}
+        {products.map((product) => (
+          <Grid item xs={12} md={8} lg={6} key={product.id}>
+            <OtherProductInfo key={product.id} product={product} />
+          </Grid>
+        ))}
+      {/* </div> */}
+      </Grid>
+    </div>
+  );
+}
+
+export default ProductOtherPurchase
