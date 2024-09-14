@@ -140,6 +140,14 @@ const AppBarContent = (props: Props) => {
     window.location.href = '/product'
   }
 
+  const onClickAboutUs = () => {
+    window.location.href = '/about-us'
+  }
+
+  const onClickContact = () => {
+    window.location.href = '/contact'
+  }
+
   return (
     <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
       <Box className='actions-left' sx={{ mr: 2, display: 'flex', alignItems: 'center' }}>
@@ -160,11 +168,11 @@ const AppBarContent = (props: Props) => {
           Training plans
         </Typography> */}
         <Box sx={{ width: '2rem' }} />
-        <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+        <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickAboutUs}>
           About us
         </Typography>
         <Box sx={{ width: '2rem' }} />
-        <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+        <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickContact}>
           Contact
         </Typography>
 
