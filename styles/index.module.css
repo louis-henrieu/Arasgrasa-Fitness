@@ -78,22 +78,3 @@
   gap: 10px;
   color: #ffffff;
 }
-
-.contact, .socialMedia, .copyright {
-  margin-bottom: 10px;
-}
-
-.contact p, .socialMedia a {
-  margin: 5px 0;
-  color: #7367F0 !important;
-}
-
-.socialMedia a {
-  color: #7367F0 !important;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.socialMedia a:hover {
-  text-decoration: underline;
-}

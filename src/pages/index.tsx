@@ -30,6 +30,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+
       <section>
         <Grid className={styles.description} container>
           <Grid item xs={12} sm={6} md={4}>
@@ -68,7 +69,7 @@ const Home = () => {
         </Grid>
         <footer className={styles.footer}>
           <div className={styles.footerContent}>
-            <div className={styles.contact}>
+            <div>
               <h3>Contact Us</h3>
               <Typography href='mailto:contact@arasgrasa.com' target='_blank' component={StyledCompanyName}>
                 Email: contact@arasgrasa.com{' '}
@@ -78,17 +79,27 @@ const Home = () => {
                 Phone: +123 456 7890
               </Typography>
             </div>
-            <div className={styles.socialMedia}>
+            <div>
               <h3>Follow Us</h3>
-              <a href='https://facebook.com' target='_blank' rel='noopener noreferrer'>
+              <Typography
+                href='https://facebook.com'
+                target='_blank'
+                component={StyledCompanyName}
+                sx={{ marginRight: '10px' }}
+              >
                 Facebook
-              </a>
-              <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>
+              </Typography>
+              <Typography
+                href='https://twitter.com'
+                target='_blank'
+                component={StyledCompanyName}
+                sx={{ marginRight: '10px' }}
+              >
                 Twitter
-              </a>
-              <a href='https://instagram.com/arasgrasa' target='_blank' rel='noopener noreferrer'>
+              </Typography>
+              <Typography href='https://instagram.com/arasgrasa' target='_blank' component={StyledCompanyName}>
                 Instagram
-              </a>
+              </Typography>
             </div>
           </div>
         </footer>
