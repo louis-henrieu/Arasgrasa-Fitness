@@ -72,8 +72,8 @@ const Home = () => {
           </div>
           <div>
             <h3>Follow Us</h3>
-            <Typography href="https://facebook.com" target="_blank" component={StyledCompanyName}>Facebook</Typography>
-            <Typography href="https://twitter.com" target="_blank" component={StyledCompanyName}>Twitter</Typography>
+            <Typography href="https://facebook.com" target="_blank" component={StyledCompanyName} sx={{marginRight: '10px'}}>Facebook</Typography>
+            <Typography href="https://twitter.com" target="_blank" component={StyledCompanyName} sx={{marginRight: '10px'}}>Twitter</Typography>
             <Typography href="https://instagram.com/arasgrasa" target="_blank" component={StyledCompanyName}>Instagram</Typography>
           </div>
         </div>
