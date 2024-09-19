@@ -8,7 +8,7 @@ import CardContent from '@mui/material/CardContent'
 const BlogDetail = ({ article }: { article: ArticleTypes }) => {
   return (
     <Card>
-      <a href={article.link} style={{ textDecoration: 'none' }} rel='canonical'>
+      <a href={article.link} style={{ textDecoration: 'none' }}>
         <CardMedia sx={{ height: '14.5625rem' }} image={article.image} />
         <CardContent>
           <Typography variant='h5' sx={{ mb: 2 }}>
