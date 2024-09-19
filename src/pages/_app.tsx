@@ -115,7 +115,7 @@ const App = (props: ExtendedAppProps) => {
                 return (
                   <ThemeComponent settings={settings}>
                         {getLayout(<Component {...pageProps} />)}
-                    <ReactHotToast>
+                    <ReactHotToast> 
                       <Toaster position={settings.toastPosition} toastOptions={{ className: 'react-hot-toast' }} />
                     </ReactHotToast>
                   </ThemeComponent>
