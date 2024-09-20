@@ -101,7 +101,7 @@ const App = (props: ExtendedAppProps) => {
           <meta name='metadataBaseUri' content='https://www.arasgrasa.fr' />          
           <meta name='keywords' content='fitness, gym, workout, yoga, bodybuilding, health, cardio, nutrition, arasgrasa, arasgrasa fitness, energy drink, sport performance, sport nutrition, sport drink, vitamins' />
           <meta name='viewport' content='width=device-width, initial-scale=1' />
-          <link rel="canonical" href="https://www.arasgrasa.fr"/>
+          {/* <link rel="canonical" href="https://www.arasgrasa.fr"/> */}
           <meta property="og:title" content="Arasgrasa Fitness"/>
           <meta property="og:description" content="The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products."/>
           <meta property="og:image" content="https://www.arasgrasa.fr/images/flavicon.png"/>
