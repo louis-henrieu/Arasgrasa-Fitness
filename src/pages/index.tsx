@@ -22,7 +22,7 @@ const Home = () => {
     <div>
       <div style={{
         height: '500px',
-        backgroundImage: 'url(/images/home/background.png)',
+        backgroundImage: 'url(/images/home/background.webp)',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -92,7 +92,7 @@ const Home = () => {
           <Grid item xs={12} sm={6} md={4}>
             <Card sx={{ marginTop: '35px' }}>
               <a href='/blog/benefits-arasgrasa-plant' style={{ textDecoration: 'none' }}>
-                <CardMedia sx={{ height: '14.5625rem' }} image='/images/blog/article1/image.png' />
+                <CardMedia sx={{ height: '14.5625rem' }} image='/images/blog/article1/image.webp' />
                 <CardContent>
                   <Typography variant='h5' sx={{ mb: 2, display: 'flex', justifyContent: 'center' }}>
                     The benefits of Arasgrasa
