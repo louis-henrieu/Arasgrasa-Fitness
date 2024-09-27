@@ -7,8 +7,6 @@ const Product = () => {
   const router = useRouter();
   const { name } = router.query;
 
-  console.log("ANEME = ", name);
-
   const product = Products.find((product) => product.link === (name + '/'));
 
   if (!product)
