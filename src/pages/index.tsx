@@ -52,7 +52,7 @@ const Home = () => {
             fontSize: '16px',
             cursor: 'pointer',
             transition: 'background-color 0.3s',
-          }} onClick={() => router.push('/product')}>
+          }} onClick={() => router.push('/product/')}>
             Buy Now !
           </button>
         </div>
@@ -84,7 +84,7 @@ const Home = () => {
             fontSize: '16px',
             cursor: 'pointer',
             transition: 'background-color 0.3s',
-          }} onClick={() => router.push('/blog')}>
+          }} onClick={() => router.push('/blog/')}>
                 Learn more in our Blog
               </button>
             </div>

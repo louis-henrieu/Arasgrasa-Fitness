@@ -10,12 +10,13 @@ import { Settings } from 'src/@core/context/settingsContext'
 
 interface Props {
   settings: Settings
+  label: string
   saveSettings: (values: Settings) => void
 }
 
 const ModeToggler = (props: Props) => {
   // ** Props
-  const { settings, saveSettings } = props
+  const { settings, label, saveSettings } = props
 
   const handleModeChange = (mode: Mode) => {
     saveSettings({ ...settings, mode: mode })
@@ -30,7 +31,7 @@ const ModeToggler = (props: Props) => {
   }
 
   return (
-    <IconButton color='inherit' aria-haspopup='true' onClick={handleModeToggle}>
+    <IconButton color='inherit' aria-haspopup='true' onClick={handleModeToggle} title={label}>
       <Icon fontSize='1.625rem' icon={settings.mode === 'dark' ? 'tabler:sun' : 'tabler:moon-stars'} />
     </IconButton>
   )

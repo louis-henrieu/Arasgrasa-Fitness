@@ -195,6 +195,7 @@ const AppBarContent = (props: Props) => {
             aria-haspopup='true'
             href='/contact'
             color='inherit'
+
           >
             <Icon icon='tabler:mail' />
           </IconButton>
@@ -209,8 +210,8 @@ const AppBarContent = (props: Props) => {
           </>
         )}
       </Box>
-      <Box className='actions-right' sx={{ display: 'flex', alignItems: 'center' }}>
-        <ModeToggler settings={settings} saveSettings={saveSettings} />
+      <Box className='actions-right' sx={{ display: 'flex', alignItems: 'center'}}>
+        <ModeToggler settings={settings} saveSettings={saveSettings} label='Toggle Dark/Light Mode' />
       </Box>
     </Box>
   )
