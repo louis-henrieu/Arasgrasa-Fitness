@@ -18,6 +18,7 @@ import ShortcutsDropdown, { ShortcutsType } from 'src/@core/layouts/components/s
 import Badge from '@mui/material/Badge'
 import Typography from '@mui/material/Typography'
 import { useMediaQuery, useTheme } from '@mui/material'
+import Link from 'next/link'
 
 interface Props {
   hidden: boolean
@@ -86,36 +87,25 @@ const AppBarContent = (props: Props) => {
 
   // ** Hook
 
-  const onClickHome = () => {
-    window.location.href = '/'
-  }
-
-  const onClickBlog = () => {
-    window.location.href = '/blog'
-  }
-
-  const onClickProduct = () => {
-    window.location.href = '/product'
-  }
-
-  const onClickAboutUs = () => {
-    window.location.href = '/about-us'
-  }
-
-  const onClickContact = () => {
-    window.location.href = '/contact'
-  }
-
   return (
     <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
       <Box className='actions-left' sx={{ mr: 2, display: 'flex', alignItems: 'center' }}>
+        {isMatch ? (
+            <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+              Aras
+            </Typography>
+        ) : (
+          <Typography variant='h4' sx={{ cursor: 'pointer' }}>
+            Arasgrasa
+          </Typography>
+        )}
         {isMatch ? (
           <IconButton
             size='large'
             aria-label='home'
             aria-controls='menu-appbar'
             aria-haspopup='true'
-            onClick={onClickHome}
+            href='/'
             color='inherit'
           >
             <Icon icon='tabler:home' />
@@ -123,9 +113,11 @@ const AppBarContent = (props: Props) => {
         ) : (
           <>
             <Box sx={{ minWidth: '2rem' }} />
-            <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickHome}>
-              Home
-            </Typography>
+            <Link href='/' passHref>
+              <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+                Home
+              </Typography>
+            </Link>
           </>
         )}
         {isMatch ? (
@@ -134,7 +126,7 @@ const AppBarContent = (props: Props) => {
             aria-label='products'
             aria-controls='menu-appbar'
             aria-haspopup='true'
-            onClick={onClickProduct}
+            href='/product'
             color='inherit'
           >
             <Icon icon='tabler:basket-plus' />
@@ -142,9 +134,11 @@ const AppBarContent = (props: Props) => {
         ) : (
           <>
             <Box sx={{ minWidth: '2rem' }} />
-            <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickProduct}>
-              Products
-            </Typography>
+            <Link href='/product' passHref>
+              <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+                Products
+              </Typography>
+            </Link>
           </>
         )}
         {isMatch ? (
@@ -153,7 +147,7 @@ const AppBarContent = (props: Props) => {
             aria-label='blog'
             aria-controls='menu-appbar'
             aria-haspopup='true'
-            onClick={onClickBlog}
+            href='/blog'
             color='inherit'
           >
             <Icon icon='tabler:brand-blogger' />
@@ -161,9 +155,11 @@ const AppBarContent = (props: Props) => {
         ) : (
           <>
             <Box sx={{ minWidth: '2rem' }} />
-            <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickBlog}>
-              Blog
-            </Typography>
+            <Link href='/blog' passHref>
+              <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+                Blog
+              </Typography>
+            </Link>
           </>
         )}
         {/* <Box sx={{ width: '2rem' }} />
@@ -176,6 +172,7 @@ const AppBarContent = (props: Props) => {
             aria-label='About us'
             aria-controls='menu-appbar'
             aria-haspopup='true'
+            href='/about-us'
             color='inherit'
           >
             <Icon icon='tabler:file-info' />
@@ -183,9 +180,11 @@ const AppBarContent = (props: Props) => {
         ) : (
           <>
             <Box sx={{ minWidth: '2rem' }} />
-            <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickAboutUs}>
-              About us
-            </Typography>
+            <Link href='/about-us' passHref>
+              <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+                About us
+              </Typography>
+            </Link>
           </>
         )}
         {isMatch ? (
@@ -194,22 +193,25 @@ const AppBarContent = (props: Props) => {
             aria-label='contact'
             aria-controls='menu-appbar'
             aria-haspopup='true'
-            onClick={onClickHome}
+            href='/contact'
             color='inherit'
+
           >
             <Icon icon='tabler:mail' />
           </IconButton>
         ) : (
           <>
             <Box sx={{ minWidth: '2rem' }} />
-            <Typography variant='h6' sx={{ cursor: 'pointer' }} onClick={onClickContact}>
-              Contact
-            </Typography>
+            <Link href='/contact' passHref>
+              <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+                Contact
+              </Typography>
+            </Link>
           </>
         )}
       </Box>
-      <Box className='actions-right' sx={{ display: 'flex', alignItems: 'center' }}>
-        <ModeToggler settings={settings} saveSettings={saveSettings} />
+      <Box className='actions-right' sx={{ display: 'flex', alignItems: 'center'}}>
+        <ModeToggler settings={settings} saveSettings={saveSettings} label='Toggle Dark/Light Mode' />
       </Box>
     </Box>
   )
