@@ -91,7 +91,7 @@ const Home = () => {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Card sx={{ marginTop: '35px' }}>
-              <a href='/blog/benefits-arasgrasa-plant' style={{ textDecoration: 'none' }}>
+              <a href='/blog/benefits-arasgrasa-plant/' style={{ textDecoration: 'none' }}>
                 <CardMedia sx={{ height: '14.5625rem' }} image='/images/blog/article1/image.webp' />
                 <CardContent>
                   <Typography variant='h5' sx={{ mb: 2, display: 'flex', justifyContent: 'center' }}>
