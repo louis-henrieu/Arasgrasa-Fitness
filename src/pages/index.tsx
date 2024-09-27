@@ -1,4 +1,4 @@
-import Grid from'@mui/material/Grid';import Card from'@mui/material/Card';import Link from'next/link';import{styled}from'@mui/material/styles';import CardMedia from'@mui/material/CardMedia';import CardContent from'@mui/material/CardContent';import Typography from'@mui/material/Typography';import{useRouter}from'next/router';import{color}from'@mui/system';const StyledCompanyName=styled(Link)(({theme})=>({fontWeight:500,textDecoration:'none',color:`${theme.palette.primary.main} !important`}));const Home=()=>{const router=useRouter();return(<div><div style={{
+import Grid from'@mui/material/Grid';import Card from'@mui/material/Card';import Link from'next/link';import{styled}from'@mui/material/styles';import CardMedia from'@mui/material/CardMedia';import CardContent from'@mui/material/CardContent';import Typography from'@mui/material/Typography';import{useRouter}from'next/router';import{color}from'@mui/system';const StyledCompanyName=styled(Link)(({theme})=>({fontWeight:500,textDecoration:'none',color:`${theme.palette.secondary.main} !important`}));const Home=()=>{const router=useRouter();return(<div><div style={{
   height: '500px', backgroundImage: 'url(/images/home/background.webp)', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', }}><div style={{
     position: 'absolute',
     top: 0,
@@ -51,7 +51,7 @@ Buy Now!</button></div>
       display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px', color: 'white', }}><div><h3>Contact Us</h3>
         <Typography href='mailto:contact@arasgrasa.com' target='_blank' component={StyledCompanyName}>
           Email: contact@arasgrasa.com{' '}
-        </Typography><br /><Typography href='tel:+1234567890'target='_blank'component={StyledCompanyName}>Phone: +1234567890</Typography>
+        </Typography><br /><br /><Typography href='tel:+1234567890'target='_blank'component={StyledCompanyName}>Phone: +1234567890</Typography>
       </div><div><h3>Follow Us</h3>
         <Typography
           href='https://facebook.com'
