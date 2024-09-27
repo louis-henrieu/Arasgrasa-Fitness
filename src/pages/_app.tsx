@@ -104,7 +104,7 @@ const App = (props: ExtendedAppProps) => {
           {/* <link rel="canonical" href="https://www.arasgrasa.fr"/> */}
           <meta property="og:title" content="Arasgrasa Fitness"/>
           <meta property="og:description" content="The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products."/>
-          <meta property="og:image" content="https://www.arasgrasa.fr/images/flavicon.png"/>
+          <meta property="og:image" content="https://www.arasgrasa.fr/images/flavicon.webp"/>
           <meta property="og:url" content="https://www.arasgrasa.fr"/>
 
         </Head>

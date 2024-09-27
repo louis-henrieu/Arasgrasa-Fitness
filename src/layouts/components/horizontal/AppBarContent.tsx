@@ -25,7 +25,7 @@ const notifications: NotificationsType[] = [
     meta: 'Today',
     avatarAlt: 'Flora',
     title: 'Congratulation Flora! 🎉',
-    avatarImg: '/images/avatars/4.png',
+    avatarImg: '/images/avatars/4.webp',
     subtitle: 'Won the monthly best seller badge'
   },
   {
@@ -39,7 +39,7 @@ const notifications: NotificationsType[] = [
     meta: '11 Aug',
     avatarAlt: 'message',
     title: 'New message received 👋🏻',
-    avatarImg: '/images/avatars/5.png',
+    avatarImg: '/images/avatars/5.webp',
     subtitle: 'You have 10 unread messages'
   },
   {
@@ -47,20 +47,20 @@ const notifications: NotificationsType[] = [
     title: 'Paypal',
     avatarAlt: 'paypal',
     subtitle: 'Received Payment',
-    avatarImg: '/images/misc/paypal.png'
+    avatarImg: '/images/misc/paypal.webp'
   },
   {
     meta: '19 Mar',
     avatarAlt: 'order',
     title: 'Received Order 📦',
-    avatarImg: '/images/avatars/3.png',
+    avatarImg: '/images/avatars/3.webp',
     subtitle: 'New order received from John'
   },
   {
     meta: '27 Dec',
     avatarAlt: 'chart',
     subtitle: '25 hrs ago',
-    avatarImg: '/images/misc/chart.png',
+    avatarImg: '/images/misc/chart.webp',
     title: 'Finance report has been generated'
   }
 ]
