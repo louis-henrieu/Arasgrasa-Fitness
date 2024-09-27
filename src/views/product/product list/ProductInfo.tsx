@@ -13,6 +13,7 @@ import IconButton from '@mui/material/IconButton'
 import CardContent from '@mui/material/CardContent'
 import CardActions from '@mui/material/CardActions'
 import Grid, { GridProps } from '@mui/material/Grid'
+import Image from 'next/image'
 
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
@@ -51,7 +52,7 @@ const ProductInfo = ({ product }: { product: ProductTypes }) => {
         <Grid container spacing={6}>
           <StyledGrid item md={5} xs={12}>
               <CardContent sx={{ display: 'flex', alignItems: 'normal', justifyContent: 'normal' }}>
-              <img style={{ width: '100%', height: 'auto' }} alt='Energy drink item' src={product.image} />
+              <Image width={500} height={500} style={{ width: '100%', height: 'auto' }} alt='Energy drink item' src={product.image} />
               </CardContent>
           </StyledGrid>
           <Grid

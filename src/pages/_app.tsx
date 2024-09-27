@@ -103,8 +103,8 @@ const App = (props: ExtendedAppProps) => {
           <meta name='viewport' content='width=device-width, initial-scale=1' />
           <link rel="canonical" href="https://www.arasgrasa.fr"/>
           <meta property="og:title" content="Arasgrasa Fitness - Best Energy Food Marketplace"/>
-          <meta property="og:description" content="The official Arasgrasa Fitness - Best Energy Food Marketplace, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products."/>
-          <meta property="og:image" content="https://www.arasgrasa.fr/images/flavicon.png"/>
+          <meta property="og:description" content="The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products."/>
+          <meta property="og:image" content="https://www.arasgrasa.fr/images/flavicon.webp"/>
           <meta property="og:url" content="https://www.arasgrasa.fr"/>
 
         </Head>
