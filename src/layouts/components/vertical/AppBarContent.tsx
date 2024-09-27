@@ -91,6 +91,15 @@ const AppBarContent = (props: Props) => {
     <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
       <Box className='actions-left' sx={{ mr: 2, display: 'flex', alignItems: 'center' }}>
         {isMatch ? (
+            <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+              Aras
+            </Typography>
+        ) : (
+          <Typography variant='h4' sx={{ cursor: 'pointer' }}>
+            Arasgrasa
+          </Typography>
+        )}
+        {isMatch ? (
           <IconButton
             size='large'
             aria-label='home'

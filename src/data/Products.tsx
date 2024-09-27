@@ -433,7 +433,7 @@ const Products: ProductTypes[] = [
     },
     composition: ['Cherry', 'Apple', 'Blueberry', 'Pineapple'],
     image: '/images/product/image7.jpeg',
-    link: '',
+    link: 'protein-smoothie',
     price: 8.99,
     stock: 10,
     rating: 4,
