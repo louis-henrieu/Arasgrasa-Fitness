@@ -84,7 +84,7 @@ const CardActivityTimeline = () => {
                 Project meeting with john @10:15am
               </Typography>
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                <Avatar src='/images/avatars/3.png' sx={{ mr: 3, width: 38, height: 38 }} />
+                <Avatar src='/images/avatars/3.webp' sx={{ mr: 3, width: 38, height: 38 }} />
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
                   <Typography variant='body2' sx={{ fontWeight: 500, color: 'text.primary' }}>
                     Lester McCarthy (Client)

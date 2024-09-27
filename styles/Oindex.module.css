@@ -1,6 +1,6 @@
 .background {
   height: 500px;
-  background: url('/images/home/background.png') center center/cover no-repeat fixed;
+  background: url('/images/home/background.webp') center center/cover no-repeat fixed;
   display: flex;
   justify-content: center;
   align-items: center;
