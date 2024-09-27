@@ -46,7 +46,7 @@ const OtherProductInfo = ({ product }: { product: ProductTypes['others'][0] }) =
 
   return (
     <Card>
-      <a href={'/product/' + product.link} target='_blank' rel='noreferrer' style={{ textDecoration: 'none' }}>
+      <a href={'/product/' + product.link} rel='noreferrer' style={{ textDecoration: 'none' }}>
         <Grid container spacing={6}>
           <StyledGrid item md={5} xs={12}>
               <CardContent sx={{ display: 'flex', alignItems: 'normal', justifyContent: 'normal' }}>

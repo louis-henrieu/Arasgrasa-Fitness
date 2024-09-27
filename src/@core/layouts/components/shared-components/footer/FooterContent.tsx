@@ -26,7 +26,7 @@ const FooterContent = () => {
             ❤️
           </Box>
           {`by`}
-          <Typography sx={{ ml: 1 }} target='_blank' href='https://arasgrasa.fr' component={StyledCompanyName}>
+          <Typography sx={{ ml: 1 }} target='_blank' href='https://arasgrasa.fr/' component={StyledCompanyName}>
             Arasgrasa
           </Typography>
         </Grid>

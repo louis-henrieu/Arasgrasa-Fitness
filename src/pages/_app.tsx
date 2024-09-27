@@ -94,18 +94,18 @@ const App = (props: ExtendedAppProps) => {
           <meta name='title' content={`${themeConfig.templateName}`} />
           <meta
             name='description'
-            content={`The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products.`}
+            content={`The official Arasgrasa Fitness - Best Energy Food Marketplace, the elf's leading energy drink for sport performance nutrition.`}
           />
-          <meta name='author' content='Arasgrasa Fitness' />
+          <meta name='author' content='Arasgrasa Fitness - Best Energy Food Marketplace' />
           <meta name='robots' content='index, follow' />
-          <meta name='metadataBaseUri' content='https://www.arasgrasa.fr' />          
-          <meta name='keywords' content='fitness, gym, workout, yoga, bodybuilding, health, cardio, nutrition, arasgrasa, arasgrasa fitness, energy drink, sport performance, sport nutrition, sport drink, vitamins' />
+          <meta name='metadataBaseUri' content='https://www.arasgrasa.fr/' />          
+          <meta name='keywords' content='arasgrasa, arasgrasa fitness, best energy food marketplace, arasgrasa burger, fitness, gym, workout, yoga, bodybuilding, health, cardio, nutrition energy drink, sport performance, sport nutrition, sport drink, vitamins' />
           <meta name='viewport' content='width=device-width, initial-scale=1' />
-          {/* <link rel="canonical" href="https://www.arasgrasa.fr"/> */}
-          <meta property="og:title" content="Arasgrasa Fitness"/>
+          <link rel="canonical" href="https://www.arasgrasa.fr/"/>
+          <meta property="og:title" content="Arasgrasa Fitness - Best Energy Food Marketplace"/>
           <meta property="og:description" content="The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products."/>
           <meta property="og:image" content="https://www.arasgrasa.fr/images/flavicon.webp"/>
-          <meta property="og:url" content="https://www.arasgrasa.fr"/>
+          <meta property="og:url" content="https://www.arasgrasa.fr/"/>
 
         </Head>
 

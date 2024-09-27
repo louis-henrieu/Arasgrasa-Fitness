@@ -6,7 +6,7 @@ const BlogPost = () => {
   const router = useRouter();
   const { name } = router.query;
 
-  const article = Articles.find((article) => article.link === name);
+  const article = Articles.find((article) => article.link === (name + '/'));
 
   if (!article) return (
       <h1>Article not found</h1>
