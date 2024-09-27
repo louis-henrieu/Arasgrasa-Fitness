@@ -21,7 +21,7 @@ const AboutUs = () => {
           Our Commitment
         </Typography>
         <Typography variant="body1" sx={{ lineHeight: 1.6 }}>
-          At Arasgrasa Fitness, we are dedicated to providing high-quality, natural products that meet the unique needs of our elf customers. We are committed to using sustainable practices and ensuring that every product we offer supports both your health and performance. Thank you for choosing us as your trusted source for sports nutrition.
+          At Arasgrasa Fitness - Best Energy Food Marketplace, we are dedicated to providing high-quality, natural products that meet the unique needs of our elf customers. We are committed to using sustainable practices and ensuring that every product we offer supports both your health and performance. Thank you for choosing us as your trusted source for sports nutrition.
         </Typography>
       </Box>
     </Container>
