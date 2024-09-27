@@ -122,7 +122,7 @@ const AppBarContent = (props: Props) => {
 
   return (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
-      <ModeToggler settings={settings} saveSettings={saveSettings} />
+      <ModeToggler settings={settings} saveSettings={saveSettings} label='Toggle Dark/Light Mode' />
       <ShortcutsDropdown settings={settings} shortcuts={shortcuts} />
       <NotificationDropdown settings={settings} notifications={notifications} />
     </Box>
