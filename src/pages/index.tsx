@@ -12,7 +12,7 @@ import { color } from '@mui/system'
 const StyledCompanyName = styled(Link)(({ theme }) => ({
   fontWeight: 500,
   textDecoration: 'none',
-  color: `${theme.palette.primary.main} !important`
+  color: `${theme.palette.secondary.main} !important`
 }))
 
 const Home = () => {
@@ -94,7 +94,7 @@ const Home = () => {
               <a href='/blog/benefits-arasgrasa-plant' style={{ textDecoration: 'none' }}>
                 <CardMedia sx={{ height: '14.5625rem' }} image='/images/blog/article1/image.webp' />
                 <CardContent>
-                  <Typography variant='h5' sx={{ mb: 2, display: 'flex', justifyContent: 'center' }}>
+                  <Typography variant='h3' sx={{ mb: 2, display: 'flex', justifyContent: 'center' }}>
                     The benefits of Arasgrasa
                   </Typography>
                   <Typography sx={{ color: 'text.secondary', display: 'flex', justifyContent: 'center' }}>
@@ -127,6 +127,7 @@ const Home = () => {
               <Typography href='mailto:contact@arasgrasa.com' target='_blank' component={StyledCompanyName}>
                 Email: contact@arasgrasa.com{' '}
               </Typography>
+              <br />
               <br />
               <Typography href='tel:+1234567890' target='_blank' component={StyledCompanyName}>
                 Phone: +123 456 7890
