@@ -36,6 +36,7 @@ import ReactHotToast from 'src/@core/styles/libs/react-hot-toast'
 
 // ** Utils Imports
 import { createEmotionCache } from 'src/@core/utils/create-emotion-cache'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 // ** Prismjs Styles
 import 'prismjs'
@@ -88,7 +89,7 @@ const App = (props: ExtendedAppProps) => {
       <CacheProvider value={emotionCache}>
         <Head>
           <title>{`${themeConfig.templateName}`}</title>
-          <meta charSet="utf-8"/>
+          <meta httpEquiv="content-type" content="text/html; charset=UTF-8" />
           <meta name="language" content="en"/>
           <meta name="theme-color" content="#f8f7fa"/>
           <meta name='title' content={`${themeConfig.templateName}`} />
@@ -106,6 +107,7 @@ const App = (props: ExtendedAppProps) => {
           <meta property="og:description" content="The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products."/>
           <meta property="og:image" content="https://www.arasgrasa.fr/images/flavicon.webp"/>
           <meta property="og:url" content="https://www.arasgrasa.fr/"/>
+          <GoogleAnalytics gaId='G-MEWLRD35LB' />
 
         </Head>
 
