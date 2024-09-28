@@ -31,7 +31,7 @@ Buy Now!</button></div>
       gap: '15%',
   }}container><Grid item xs={12} sm={6} md={4}><div style={{ textAlign: 'center', zIndex: 1, color: 'white' }}><Typography variant='h2' sx={{ marginBottom: '10px' }}>About Us</Typography>
         <Typography sx={{ color: 'text.secondary' }}>
-          We are an elf shop specialised in sport products. We sell energy drinks, protein powder, vitamins made
+          We are an elf shop specialised in arasgrasa sport products. We sell energy drinks, protein powder, vitamins made
           out of natural ingredients. Our main ingredient is Arasgrasa which is known to be extracted from a plant
           that grows on Caldey Island in Wales. It is proved to be a very efficient stimulant on elves.
         </Typography><button style={{
