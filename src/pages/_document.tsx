@@ -6,7 +6,6 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 // ** Emotion Imports
 import createEmotionServer from '@emotion/server/create-instance'
-import { GoogleAnalytics } from '@next/third-parties/google'
 
 // ** Utils Imports
 import { createEmotionCache } from 'src/@core/utils/create-emotion-cache'
@@ -16,7 +15,6 @@ class CustomDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-          <GoogleAnalytics gaId='G-MEWLRD35LB' />
           <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link rel='preconnect' href='https://fonts.gstatic.com' />
           <link

@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Router } from 'next/router'
 import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
+import Script from 'next/script'
 
 // ** Store Imports
 import { store } from 'src/store'
@@ -106,6 +107,22 @@ const App = (props: ExtendedAppProps) => {
           <meta property="og:description" content="The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products."/>
           <meta property="og:image" content="https://www.arasgrasa.fr/images/flavicon.webp"/>
           <meta property="og:url" content="https://www.arasgrasa.fr/"/>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=G-MEWLRD35LB`}
+            strategy="afterInteractive"
+          />
+          <Script
+            id="google-analytics"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-MEWLRD35LB');
+              `
+            }}
+          />
         </Head>
 
           <SettingsProvider {...(setConfig ? { pageSettings: setConfig() } : {})}>
