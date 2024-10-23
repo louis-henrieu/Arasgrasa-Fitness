@@ -1,7 +1,12 @@
 import { Container, Typography, Box } from '@mui/material';
+import Head from 'next/head';
 
 const AboutUs = () => {
   return (
+    <><Head>
+    <meta name="description" content="Learn about Arasgrasa Fitness, the best energy food marketplace for elves. Discover our story, commitment to quality, and sustainable practices." />
+    <link rel="canonical" href="https://www.arasgrasa.fr/about-us/"/>
+    </Head>
     <Container sx={{ padding: '2rem' }}>
       <Box sx={{ mb: '2rem', textAlign: 'center' }}>
         <Typography variant="h2" sx={{ fontWeight: 700 }}>
@@ -24,7 +29,7 @@ const AboutUs = () => {
           At Arasgrasa Fitness - Best Energy Food Marketplace, we are dedicated to providing high-quality, natural products that meet the unique needs of our elf customers. We are committed to using sustainable practices and ensuring that every product we offer supports both your health and performance. Thank you for choosing us as your trusted source for sports nutrition.
         </Typography>
       </Box>
-    </Container>
+    </Container></>
   );
 };
 
