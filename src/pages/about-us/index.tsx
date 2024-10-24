@@ -18,7 +18,7 @@ const AboutUs = () => {
           Our Story
         </Typography>
         <Typography variant="body1" sx={{ lineHeight: 1.6 }}>
-          We are an elf shop specialized in sports products. We offer a range of energy drinks, protein powders, and vitamins made from natural ingredients. Our primary ingredient is Arasgrasa, a unique substance extracted from a rare plant that grows on Caldey Island in Wales. This potent ingredient has been proven to be a highly effective stimulant for elves, enhancing their energy and performance.
+          We are an elf shop specialized in arasgrasa sports products. We offer a range of energy drinks, protein powders, and vitamins made from natural ingredients. Our primary ingredient is Arasgrasa, a unique substance extracted from a rare plant that grows on Caldey Island in Wales. This potent ingredient has been proven to be a highly effective stimulant for elves, enhancing their energy and performance.
         </Typography>
       </Box>
       <Box sx={{ mb: '2rem' }}>

@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 
 const StyledCompanyName = styled(Link)(({ theme }) => ({
-  fontWeight: 500,
+  fontWeight: 'bold',
   textDecoration: 'none',
   color: `${theme.palette.primary.main} !important`
 }))

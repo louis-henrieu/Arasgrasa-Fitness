@@ -6,6 +6,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 // ** Emotion Imports
 import createEmotionServer from '@emotion/server/create-instance'
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 
 // ** Utils Imports
 import { createEmotionCache } from 'src/@core/utils/create-emotion-cache'
@@ -16,6 +17,8 @@ class CustomDocument extends Document {
   render() {
     return (
       <Html lang='en'>
+        <GoogleAnalytics gaId='G-MEWLRD35LB' />
+        <GoogleTagManager gtmId='G-MEWLRD35LB' />
         <Head>
           {isProd && (
             <>
