@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Router } from 'next/router'
 import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
+import { useEffect } from 'react'
 import Script from 'next/script'
 
 // ** Store Imports
@@ -84,6 +85,22 @@ const App = (props: ExtendedAppProps) => {
 
   const setConfig = Component.setConfig ?? undefined
 
+  const isProd = process.env.NODE_ENV === "production";
+
+  useEffect(() => {
+    const handleRouteChange = (url: any) => {
+      if (isProd) {
+        window.gtag('config', process.env.NEXT_PUBLIC_GA_ID, {
+          page_path: url,
+        })
+      }
+    }
+    Router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      Router.events.off('routeChangeComplete', handleRouteChange);
+    }
+  }, [Router.events]);
+
   return (
     <Provider store={store}>
       <CacheProvider value={emotionCache}>
@@ -103,7 +120,7 @@ const App = (props: ExtendedAppProps) => {
           <meta name='keywords' content='arasgrasa, arasgrasa fitness, best energy food marketplace, arasgrasa burger, fitness, gym, workout, yoga, bodybuilding, health, cardio, nutrition energy drink, sport performance, sport nutrition, sport drink, vitamins' />
           <meta name='viewport' content='width=device-width, initial-scale=1' />
           <link rel="canonical" href="https://www.arasgrasa.fr/"/>
-          <meta property="og:title" content="Arasgrasa Fitness - Best Energy Food Marketplace"/>
+          <meta property="og:title" content="Arasgrasa Fitness - Best Energy Food Marketplace in the world"/>
           <meta property="og:description" content="The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products."/>
           <meta property="og:image" content="https://www.arasgrasa.fr/images/flavicon.webp"/>
           <meta property="og:url" content="https://www.arasgrasa.fr/"/>

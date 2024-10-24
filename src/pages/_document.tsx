@@ -11,6 +11,8 @@ import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 // ** Utils Imports
 import { createEmotionCache } from 'src/@core/utils/create-emotion-cache'
 
+const gtag = `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`;
+const isProd = process.env.NODE_ENV === "production";
 class CustomDocument extends Document {
   render() {
     return (
@@ -18,6 +20,25 @@ class CustomDocument extends Document {
         <GoogleAnalytics gaId='G-MEWLRD35LB' />
         <GoogleTagManager gtmId='G-MEWLRD35LB' />
         <Head>
+          {isProd && (
+            <>
+              {/* Google Analytics Measurement ID*/}
+              <script async src={gtag} />
+                {/* Inject the GA tracking code with the Measurement ID */}
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+                      page_path: window.location.pathname
+                    });
+                  `,
+                }}
+              />
+            </>
+          )}
           <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link rel='preconnect' href='https://fonts.gstatic.com' />
           <link

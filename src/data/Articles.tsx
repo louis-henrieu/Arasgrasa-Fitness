@@ -36,7 +36,7 @@ const Articles: ArticleTypes[] = [
     id: 1,
     title: 'The essential about vitamin B6',
     description:
-      "Vitamine B6 is a water-soluble vitamin that is essential for good health. It is involved in more than 100 enzyme reactions in the body's cells, helping to metabolize amino acids from proteins and convert stored carbohydrates and fats into energy. It is also important for brain development during pregnancy and infancy as well as for immune function. In this article, we will discuss the benefits of vitamine B6 and how it can help you achieve your health and wellness.",
+      "Vitamine B6 is a water-soluble vitamin that is essential for good health. It is involved in more than 100 enzyme reactions in the body's cells, helping to metabolize amino acids from proteins and convert stored carbohydrates and fats into energy. It is important for brain development and for immune function.",
     image: '/images/blog/article2/image.webp',
     link: 'essential-vitamin-b6/',
     content: [
@@ -131,7 +131,7 @@ const Articles: ArticleTypes[] = [
     id: 2,
     title: 'Why do we need Vitamin D? What happens when we lack it ?',
     description:
-      'Vitamin D is a fat-soluble vitamin that is essential for good health. It helps the body absorb calcium and phosphorus from the food we eat.',
+      'Vitamin D is a fat-soluble vitamin essential for overall health and well-being. It plays a crucial role in helping the body absorb calcium and phosphorus from the food we eat, which are vital for maintaining strong bones and teeth. Additionally, vitamin D supports immune function, muscle health, and cell growth.',
     image: '/images/blog/article3/image.webp',
     link: 'you-need-vitamine-d/',
     content: [
@@ -147,15 +147,15 @@ const Articles: ArticleTypes[] = [
       {
         id: 1,
         title: 'What products contain vitamin D ?',
-        description: ' Fatty fish: salmon, cod liver oil, milk, orange juice, egg yolks.',
+        description: "The picture displays a variety of vitamin D-rich foods, each contributing to better health. It includes fatty fish like salmon, known for its high vitamin D content and omega-3 fatty acids, and cod liver oil, a concentrated source of vitamin D. There's also milk, which is often fortified with vitamin D, along with a glass of fortified orange juice. Additionally, egg yolks are shown, which naturally contain vitamin D and help support daily nutritional needs. Together, these foods represent some of the best dietary sources for boosting vitamin D intake and supporting bone health, immune function, and overall wellness.",
         image: '/images/blog/vitamin-d.jpg',
         link: null,
         type: ContentArticleEnum.Image
       },
       {
         id: 2,
-        title: 'Vitamin B6 Benefits for Elves: A Treasure for Magical Vitality',
-        description: 'Arasgrasa is ....',
+        title: 'How to get more vitamin D',
+        description: 'To get more vitamin D, you can start by spending more time in the sunlight, as your skin produces vitamin D when exposed to UV rays. Aim for about 10-30 minutes of sun exposure several times a week, depending on your skin type and location. Eating foods rich in vitamin D, such as fatty fish (salmon, mackerel), egg yolks, and fortified foods like milk and cereals, can also help. Additionally, consider taking a vitamin D supplement, especially during the winter months or if you live in a region with limited sunlight. Always consult a healthcare professional before starting supplements.',
         image: null,
         link: null,
         type: ContentArticleEnum.Text
@@ -181,8 +181,48 @@ const Articles: ArticleTypes[] = [
       },
       {
         id: 1,
-        title: 'Vitamin B6 Benefits for Elves: A Treasure for Magical Vitality',
-        description: 'Arasgrasa is ....',
+        title: 'Taurine: Benefits',
+        description: 'Taurine is an amino acid that plays a crucial role in various bodily functions, offering several health benefits. It is naturally found in meat, fish, and dairy products, and is also a common ingredient in energy drinks and supplements. Here are some key benefits of taurine:',
+        image: null,
+        link: null,
+        type: ContentArticleEnum.Text
+      },
+      {
+        id: 2,
+        title: '1. Supports Heart Health',
+        description: 'Helps regulate blood pressure and cholesterol levels, which can reduce the risk of heart disease. It also aids in maintaining healthy blood vessels and supports overall cardiovascular function, making it beneficial for people with hypertension.',
+        image: null,
+        link: null,
+        type: ContentArticleEnum.Text
+      },
+      {
+        id: 3,
+        title: '2. Enhances Athletic Performance',
+        description: 'Taurine is known to reduce muscle fatigue, improve endurance, and increase exercise capacity. It helps maintain electrolyte balance in muscles and supports faster recovery after intense workouts.',
+        image: null,
+        link: null,
+        type: ContentArticleEnum.Text
+      },
+      {
+        id: 4,
+        title: '3. Boosts Cognitive Function',
+        description: 'It has neuroprotective properties that may help protect brain cells from damage. Taurine can improve cognitive function and support mental clarity, potentially reducing the risk of neurodegenerative diseases. Taurine is vital for retinal health and can help protect against vision loss related to aging. It plays a role in maintaining the function of the retina, the part of the eye responsible for sensing light.',
+        image: null,
+        link: null,
+        type: ContentArticleEnum.Text
+      },
+      {
+        id: 5,
+        title: '4. Supports Eye Health',
+        description: 'Taurine is vital for retinal health and can help protect against vision loss related to aging. It plays a role in maintaining the function of the retina, the part of the eye responsible for sensing light.',
+        image: null,
+        link: null,
+        type: ContentArticleEnum.Text
+      },
+      {
+        id: 6,
+        title: '5. Regulates Blood Sugar',
+        description: 'This amino acid may help improve insulin sensitivity, promoting better blood sugar control. It can be beneficial for individuals with diabetes or those at risk of developing the condition.\n Incorporating taurine through diet or supplements may help optimize these health benefits, although it’s always wise to consult a healthcare professional for guidance on proper dosage and use.',
         image: null,
         link: null,
         type: ContentArticleEnum.Text
@@ -208,8 +248,9 @@ const Articles: ArticleTypes[] = [
       },
       {
         id: 1,
-        title: 'Vitamin B6 Benefits for Elves: A Treasure for Magical Vitality',
-        description: 'Arasgrasa is ....',
+        title: ' Why You Need Omega 3 Fatty Acids',
+        description:
+          'Omega-3 fatty acids are essential fats that the body cannot produce on its own, so they must be obtained through diet. They play a key role in brain function, reduce inflammation, and support heart health by lowering blood pressure and improving cholesterol levels. Common sources include fatty fish (like salmon), flaxseeds, and walnuts. Regular intake of omega-3s is linked to reduced risk of heart disease, improved cognitive function, and better joint health, making them vital for overall well-being.',
         image: null,
         link: null,
         type: ContentArticleEnum.Text
@@ -220,26 +261,29 @@ const Articles: ArticleTypes[] = [
     id: 5,
     title: 'Caffeine: Effects, risks, and cautions',
     description:
-      'Caffeine is a natural stimulant that is found in coffee, tea, and other beverages. It is also added to some medications and supplements. Caffeine has been shown to have a number of effects on the body, including increasing alertness, improving mood, and boosting metabolism. However, it can also have some negative effects, including insomnia, anxiety, and heart palpitations. In this article, we will discuss the effects, risks, and cautions of caffeine and how you can use it safely.',
+      'Caffeine is a widely consumed natural stimulant, commonly found in coffee, tea, energy drinks, chocolate, and various other beverages. \
+      It is also added to some over-the-counter medications and dietary supplements due to its stimulating effects. Caffeine works by stimulating \
+      the central nervous system, which can help to increase alertness and combat fatigue. It is well-known for its ability to enhance mental focus, \
+      sharpen concentration, and elevate mood, making it a popular choice for those looking to boost productivity.',
     image: '/images/blog/article6/image.webp',
     link: 'caffeine-effects-risks-cautions/',
     content: [
       {
         id: 0,
-        title: 'What is Arasgrasa ?',
-        description: 'Arasgrasa is ....',
-        image: null,
-        link: null,
-        type: ContentArticleEnum.Text
-      },
-      {
-        id: 1,
         title: ' Caffeine: Benefits ',
         description:
           "Dr. Honaker talks to us about some of the benefits of having caffeine. A few things such as increase of IQ, reduction in alzheimer's and even possible reduction in risks of cancer.",
         image: null,
         link: 'https://www.youtube.com/embed/HRjqZhtmPig?si=EYVa5mDIbhj-Dn_8',
         type: ContentArticleEnum.Video
+      },
+      {
+        id: 1,
+        title: 'What benefits does caffeine have for elves?',
+        description: 'Caffeine is a natural stimulant that has been shown to have a number of benefits for elves. It can help to increase energy levels, improve focus and concentration, and boost mood. Caffeine is also known to help with weight loss by increasing metabolism and suppressing appetite. In addition, caffeine has been shown to enhance athletic performance by increasing endurance and reducing fatigue. For elves who are looking to improve their overall health and well-being, caffeine can be a valuable tool in their arsenal.',
+        image: null,
+        link: null,
+        type: ContentArticleEnum.Text
       },
       {
         id: 2,
