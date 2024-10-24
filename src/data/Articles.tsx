@@ -284,6 +284,14 @@ const Articles: ArticleTypes[] = [
         image: null,
         link: null,
         type: ContentArticleEnum.Text
+      },
+      {
+        id: 2,
+        title: 'What products contain vitamin B6 ?',
+        description: 'Coffee, espresso, tea, green tea, decaffeinated tea, energy drinks.',
+        image: '/images/blog/caffeine.jpg',
+        link: null,
+        type: ContentArticleEnum.Image
       }
     ]
   }
