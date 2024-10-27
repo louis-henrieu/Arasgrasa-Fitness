@@ -90,9 +90,13 @@ const App = (props: ExtendedAppProps) => {
   useEffect(() => {
     const handleRouteChange = (url: any) => {
       if (isProd) {
-        window.gtag('config', process.env.NEXT_PUBLIC_GA_ID, {
-          page_path: url,
-        })
+        if (process.env.NEXT_PUBLIC_GA_ID) {
+          window.gtag('config', process.env.NEXT_PUBLIC_GA_ID, {
+            page_path: url,
+          });
+        } else {
+          console.error('NEXT_PUBLIC_GA_ID is not defined');
+        }
       }
     }
     Router.events.on('routeChangeComplete', handleRouteChange);
