@@ -91,11 +91,11 @@ const AppBarContent = (props: Props) => {
     <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
       <Box className='actions-left' sx={{ mr: 2, display: 'flex', alignItems: 'center' }}>
         {isMatch ? (
-            <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+            <Typography variant='body1' sx={{ cursor: 'pointer', fontWeight: 'bold', fontSize: '1.5rem' }}>
               Aras
             </Typography>
         ) : (
-          <Typography variant='h4' sx={{ cursor: 'pointer' }}>
+          <Typography variant='body1' sx={{ cursor: 'pointer', fontWeight: 'bold', fontSize: '1.5rem' }}>
             Arasgrasa
           </Typography>
         )}
@@ -114,7 +114,7 @@ const AppBarContent = (props: Props) => {
           <>
             <Box sx={{ minWidth: '2rem' }} />
             <Link href='/' passHref>
-              <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+              <Typography variant='body1' sx={{ cursor: 'pointer' }}>
                 Home
               </Typography>
             </Link>
@@ -135,7 +135,7 @@ const AppBarContent = (props: Props) => {
           <>
             <Box sx={{ minWidth: '2rem' }} />
             <Link href='/product' passHref>
-              <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+              <Typography variant='body1' sx={{ cursor: 'pointer' }}>
                 Products
               </Typography>
             </Link>
@@ -156,7 +156,7 @@ const AppBarContent = (props: Props) => {
           <>
             <Box sx={{ minWidth: '2rem' }} />
             <Link href='/blog' passHref>
-              <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+              <Typography variant='body1' sx={{ cursor: 'pointer' }}>
                 Blog
               </Typography>
             </Link>
@@ -181,7 +181,7 @@ const AppBarContent = (props: Props) => {
           <>
             <Box sx={{ minWidth: '2rem' }} />
             <Link href='/about-us' passHref>
-              <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+              <Typography variant='body1' sx={{ cursor: 'pointer' }}>
                 About us
               </Typography>
             </Link>
@@ -203,7 +203,7 @@ const AppBarContent = (props: Props) => {
           <>
             <Box sx={{ minWidth: '2rem' }} />
             <Link href='/contact' passHref>
-              <Typography variant='h6' sx={{ cursor: 'pointer' }}>
+              <Typography variant='body1' sx={{ cursor: 'pointer' }}>
                 Contact
               </Typography>
             </Link>
