@@ -19,6 +19,7 @@ import Badge from '@mui/material/Badge'
 import Typography from '@mui/material/Typography'
 import { useMediaQuery, useTheme } from '@mui/material'
 import Link from 'next/link'
+import { text } from 'stream/consumers'
 
 interface Props {
   hidden: boolean
@@ -113,7 +114,7 @@ const AppBarContent = (props: Props) => {
         ) : (
           <>
             <Box sx={{ minWidth: '2rem' }} />
-            <Link href='/' passHref>
+            <Link href='/' passHref style={{ textDecoration: 'none' }}>
               <Typography variant='body1' sx={{ cursor: 'pointer' }}>
                 Home
               </Typography>
@@ -134,7 +135,7 @@ const AppBarContent = (props: Props) => {
         ) : (
           <>
             <Box sx={{ minWidth: '2rem' }} />
-            <Link href='/product' passHref>
+            <Link href='/product' passHref style={{ textDecoration: 'none' }}>
               <Typography variant='body1' sx={{ cursor: 'pointer' }}>
                 Products
               </Typography>
@@ -155,7 +156,7 @@ const AppBarContent = (props: Props) => {
         ) : (
           <>
             <Box sx={{ minWidth: '2rem' }} />
-            <Link href='/blog' passHref>
+            <Link href='/blog' passHref style={{ textDecoration: 'none' }}>
               <Typography variant='body1' sx={{ cursor: 'pointer' }}>
                 Blog
               </Typography>
@@ -180,7 +181,7 @@ const AppBarContent = (props: Props) => {
         ) : (
           <>
             <Box sx={{ minWidth: '2rem' }} />
-            <Link href='/about-us' passHref>
+            <Link href='/about-us' passHref style={{ textDecoration: 'none' }}>
               <Typography variant='body1' sx={{ cursor: 'pointer' }}>
                 About us
               </Typography>
@@ -202,7 +203,7 @@ const AppBarContent = (props: Props) => {
         ) : (
           <>
             <Box sx={{ minWidth: '2rem' }} />
-            <Link href='/contact' passHref>
+            <Link href='/contact' passHref style={{ textDecoration: 'none' }}>
               <Typography variant='body1' sx={{ cursor: 'pointer' }}>
                 Contact
               </Typography>
