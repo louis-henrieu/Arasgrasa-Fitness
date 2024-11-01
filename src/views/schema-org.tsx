@@ -111,6 +111,7 @@ const ProductSchemaOrg = ({ name, description, sku, brand, price, currency, avai
 }
 
 interface ProductReviewSchemaOrgProps {
+  productName: string;
   author: string;
   date: string;
   reviewBody: string;
@@ -118,7 +119,7 @@ interface ProductReviewSchemaOrgProps {
   image: string;
 }
 
-const ProductReviewSchemaOrg = ({ author, date, reviewBody, rating, image }: ProductReviewSchemaOrgProps) => {
+const ProductReviewSchemaOrg = ({ productName, author, date, reviewBody, rating, image }: ProductReviewSchemaOrgProps) => {
   const based_url = Url();
 
   return (
@@ -147,7 +148,11 @@ const ProductReviewSchemaOrg = ({ author, date, reviewBody, rating, image }: Pro
                 "url": "${based_url}/images/flavicon.webp"
                 }
             },
-            "image": "${based_url}${image}"
+            "image": "${based_url}${image}",
+            "itemReviewed": {
+                "@type": "Product",
+                "name": "${productName}",
+            }
             }
             `,
       }}
