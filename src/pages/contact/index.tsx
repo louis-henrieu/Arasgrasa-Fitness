@@ -8,6 +8,8 @@ import Box, { BoxProps } from '@mui/material/Box'
 import Icon from 'src/@core/components/icon'
 import CustomChip from 'src/@core/components/mui/chip'
 import CustomAvatar from 'src/@core/components/mui/avatar'
+import Textfield from '@mui/material/TextField'
+import Button from '@mui/material/Button'
 
 const StyledBox1 = styled(Box)<BoxProps>(({ theme }) => ({
   display: 'flex',
@@ -61,11 +63,11 @@ const ContactUs = () => {
                   variant='h4'
                   component={Link}
                   onClick={e => e.preventDefault()}
-                  sx={{ mb: 2.5, textDecoration: 'none', '&:hover': { color: 'primary.main' } }}
+                  sx={{ mb: 2.5, textDecoration: 'none', '&:hover': { color: 'primary.main' }, mt: '2rem' }}
                 >
                   +123 456 7890
                 </Typography>
-                <Typography sx={{ color: 'text.secondary' }}>We are always happy to help!</Typography>
+                <Typography sx={{ color: 'text.secondary', mb: '4rem' }}>We are always happy to help!</Typography>
               </StyledBox1>
             </Grid>
 
@@ -74,16 +76,20 @@ const ContactUs = () => {
                 <CustomAvatar skin='light' variant='rounded' sx={{ mb: 2.5, height: 38, width: 38 }}>
                   <Icon fontSize='1.75rem' icon='tabler:mail' />
                 </CustomAvatar>
-                <Typography
-                  href='mailto:contact@arasgrasa.com'
-                  variant='h4'
-                  component={Link}
-                  onClick={e => e.preventDefault()}
-                  sx={{ mb: 2.5, textDecoration: 'none', '&:hover': { color: 'primary.main' } }}
-                >
-                  contact@arasgrasa.com
-                </Typography>
-                <Typography sx={{ color: 'text.secondary' }}>Best way to get answer faster!</Typography>
+                {/* Create a texte box to send an email */}
+                <Typography sx={{ color: 'text.secondary' }}>Contact Us</Typography>
+                <Textfield
+                  id="outlined-basic"
+                  label="Type your message here..."
+                  variant="outlined"
+                  multiline
+                  rows={2}
+                  fullWidth
+                  sx={{ p: 2 }}
+                />
+                <Button variant="contained" color="primary" sx={{ mt: 2 }}>
+                  Send
+                </Button>
               </StyledBox2>
             </Grid>
           </Grid>
