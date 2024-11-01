@@ -8,7 +8,7 @@ import ProductOtherPurchase from "./componentes/ProductOtherPurchase";
 import { useTheme } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Grid from "@mui/material/Grid";
-import { ProductReviewSchemaOrg, ProductSchemaOrg } from "src/views/schema-org";
+import { ProductSchemaOrg } from "src/views/schema-org";
 
 const ProductDetail = ({ product }: { product: ProductTypes }) => {
 
@@ -25,7 +25,7 @@ const ProductDetail = ({ product }: { product: ProductTypes }) => {
           <ProductImage image={product.image} title={product.title} />
           <ProductChoice choice={product.choice} />
           <ProductInformation description={product.description.long} composition={product.composition} />
-          <ProductReviews reviews={product.reviews} />
+          <ProductReviews reviews={product.reviews} product_name={product.title} />
           <ProductOtherPurchase products={product.others} />
         </>
       ) : (
@@ -40,7 +40,7 @@ const ProductDetail = ({ product }: { product: ProductTypes }) => {
           <ProductInformation description={product.description.long} composition={product.composition} />
             </Grid>
           </Grid>
-          <ProductReviews reviews={product.reviews} />
+          <ProductReviews reviews={product.reviews} product_name={product.title} />
           <ProductOtherPurchase products={product.others} />
         </>
       )}
