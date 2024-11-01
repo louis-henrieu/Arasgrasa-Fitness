@@ -111,15 +111,18 @@ const ProductSchemaOrg = ({ name, description, sku, brand, price, currency, avai
 }
 
 interface ProductReviewSchemaOrgProps {
-  productName: string;
   author: string;
   date: string;
   reviewBody: string;
   rating: number;
   image: string;
+  product: {
+    title: string;
+    price: number;
+  }
 }
 
-const ProductReviewSchemaOrg = ({ productName, author, date, reviewBody, rating, image }: ProductReviewSchemaOrgProps) => {
+const ProductReviewSchemaOrg = ({ author, date, reviewBody, rating, image, product }: ProductReviewSchemaOrgProps) => {
   const based_url = Url();
 
   return (
@@ -151,7 +154,18 @@ const ProductReviewSchemaOrg = ({ productName, author, date, reviewBody, rating,
             "image": "${based_url}${image}",
             "itemReviewed": {
                 "@type": "Product",
-                "name": "${productName}"
+                "name": "${product.title}",
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "EUR",
+                    "price": "${product.price}",
+                    "availability": "InStock",
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "${rating}",
+                    "reviewCount": "1"
+                }
             }
             }
             `,

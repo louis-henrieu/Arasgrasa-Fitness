@@ -25,7 +25,7 @@ const ProductDetail = ({ product }: { product: ProductTypes }) => {
           <ProductImage image={product.image} title={product.title} />
           <ProductChoice choice={product.choice} />
           <ProductInformation description={product.description.long} composition={product.composition} />
-          <ProductReviews reviews={product.reviews} product_name={product.title} />
+          <ProductReviews reviews={product.reviews} product={product} />
           <ProductOtherPurchase products={product.others} />
         </>
       ) : (
@@ -40,7 +40,7 @@ const ProductDetail = ({ product }: { product: ProductTypes }) => {
           <ProductInformation description={product.description.long} composition={product.composition} />
             </Grid>
           </Grid>
-          <ProductReviews reviews={product.reviews} product_name={product.title} />
+          <ProductReviews reviews={product.reviews} product={product} />
           <ProductOtherPurchase products={product.others} />
         </>
       )}
