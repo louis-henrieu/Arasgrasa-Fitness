@@ -4,7 +4,7 @@ function Url(): string {
   if (process.env.BASE_URL) {
     return process.env.BASE_URL;
   } else {
-    return "localhost:3000";
+    return "https://arasgrasa.fr";
   }
 }
 
@@ -161,7 +161,7 @@ const ProductReviewSchemaOrg = ({ author, date, reviewBody, rating, image, produ
                 "@type": "Product",
                 "name": "${product.title}",
                 "description": "${product.description.long}",
-                "image": "${based_url}${product.image}",
+                "image": "${based_url}/${product.image}",
                 "shippingDetails": {
                   "@type": "OfferShippingDetails",
                   "shippingDestination": "ES",
