@@ -31,7 +31,8 @@ const Products: ProductTypes[] = [
     reviews: [
       {
         id: 0,
-        name: 'John Doe',
+        name: 'Ben Smith',
+        date: '2024-06-12',
         image: '/images/avatars/7.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -39,13 +40,15 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-08-20',
         image: '/images/avatars/8.webp',
         comment: 'I love it',
         rating: 5
       },
       {
         id: 2,
-        name: 'Sam Smith',
+        name: 'Lily Brown',
+        date: '2024-10-01',
         image: '/images/avatars/12.webp',
         comment: 'Great product',
         rating: 4
@@ -54,9 +57,9 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Boost Apple Energy Drink',
-        description: 'Boost Apple Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'boost-apple/',
+        title: 'Boost Energy Original Drink',
+        description: 'Boost Energy Original Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'arasgrasa-original/',
         image: '/images/product/image2.webp',
         price: 8.95,
         rating: 4
@@ -65,7 +68,7 @@ const Products: ProductTypes[] = [
         id: 1,
         title: 'Boost Blueberry Energy Drink',
         description: 'Boost Blueberry Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'boost-blueberry/',
+        link: 'arasgrasa-vegan/',
         image: '/images/product/image3.webp',
         price: 7.95,
         rating: 5
@@ -102,32 +105,35 @@ const Products: ProductTypes[] = [
     reviews: [
       {
         id: 0,
-        name: 'John Doe',
+        name: 'Lena Smith',
+        date: '2024-07-23',
         image: '/images/avatars/3.webp',
-        comment: 'Very good flavor',
+        comment: 'Very good flavor, I like to drink it after my workout',
         rating: 4
       },
       {
         id: 1,
-        name: 'Jane Doe',
+        name: 'Corentin Lecourt',
+        date: '2024-09-15',
         image: '/images/avatars/5.webp',
-        comment: 'I love it',
+        comment: 'I love it, I drink it every day',
         rating: 5
       },
       {
         id: 2,
-        name: 'Sam Smith',
+        name: 'Jonathan Davis',
+        date: '2024-09-30',
         image: '/images/avatars/13.webp',
-        comment: 'Great product',
+        comment: 'Great product. I recommend it',
         rating: 4
       }
     ],
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
+        title: 'Boost Cherry Energy Drink',
+        description: 'Boost Cherry Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'boost-cherry/',
         image: '/images/product/image1.webp',
         price: 9.95,
         rating: 4.5
@@ -135,7 +141,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         title: 'Arasgrasa-Blueberry Powder',
-        description: 'Arasgrasa-Blueberry Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        description: 'Boost Blueberry Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
         link: 'arasgrasa-vegan/',
         image: '/images/product/image3.webp',
         price: 7.95,
@@ -173,6 +179,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-08-23',
         image: '/images/avatars/3.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -180,6 +187,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-09-15',
         image: '/images/avatars/5.webp',
         comment: 'I love it. Using everyday.',
         rating: 5
@@ -187,6 +195,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-10-27',
         image: '/images/avatars/11.webp',
         comment: 'Great product',
         rating: 4
@@ -195,17 +204,17 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
+        title: 'Boost Cherry Energy Drink',
+        description: 'Arasgrasa-Cherry Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'boost-cherry/',
         image: '/images/product/image1.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        title: 'Boost Energy Original Drink',
+        description: 'Boost Energy Original Drink will help to become healthier and give you some extra energy for your daily workouts.',
         link: 'arasgrasa-original/',
         image: '/images/product/image2.webp',
         price: 8.95,
@@ -243,6 +252,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-08-23',
         image: '/images/avatars/3.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -250,6 +260,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-09-01',
         image: '/images/avatars/8.webp',
         comment: 'I love it',
         rating: 5
@@ -257,6 +268,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-10-23',
         image: '/images/avatars/13.webp',
         comment: 'Great product',
         rating: 4
@@ -265,19 +277,19 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
-        image: '/images/product/image1.webp',
+        title: 'Boost Energy Original Drink',
+        description: 'Boost Energy Original Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'arasgrasa-original/',
+        image: '/images/product/image2.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-original/',
-        image: '/images/product/image2.webp',
+        title: 'Student Energy GEL',
+        description: 'Student Energy GEL will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'energy-gel/',
+        image: '/images/product/image5.webp',
         price: 8.95,
         rating: 4
       }
@@ -314,6 +326,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-07-20',
         image: '/images/avatars/1.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -321,6 +334,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-08-15',
         image: '/images/avatars/5.webp',
         comment: 'I love it',
         rating: 5
@@ -328,6 +342,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-10-26',
         image: '/images/avatars/11.webp',
         comment: 'Great product',
         rating: 4
@@ -336,17 +351,17 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
-        image: '/images/product/image1.webp',
+        title: 'Sour Apple POP',
+        description: 'Sour Apple is a refreshing alternative to traditional protein shakes. Featuring the same cutting-edge technology as our Clear Vegan Protein.',
+        link: 'protein-shake/',
+        image: '/images/product/image8.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        title: 'Boost Energy Original Drink',
+        description: 'Boost Energy Original Drink will help to become healthier and give you some extra energy for your daily workouts.',
         link: 'arasgrasa-original/',
         image: '/images/product/image2.webp',
         price: 8.95,
@@ -384,6 +399,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-08-03',
         image: '/images/avatars/10.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -391,6 +407,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-09-30',
         image: '/images/avatars/7.webp',
         comment: 'I love it',
         rating: 5
@@ -398,6 +415,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-10-31',
         image: '/images/avatars/13.webp',
         comment: 'Great product',
         rating: 4
@@ -406,19 +424,19 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
-        image: '/images/product/image1.webp',
+        title: 'Essential oil energy for elf',
+        description: 'Boost Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'essential-oil-energy/',
+        image: '/images/product/image4.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-original/',
-        image: '/images/product/image2.webp',
+        title: 'Energy Vitamins',
+        description: 'Energy Vitamins will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'energy-vitamins/',
+        image: '/images/product/image10.webp',
         price: 8.95,
         rating: 4
       }
@@ -426,7 +444,7 @@ const Products: ProductTypes[] = [
   },
   {
     id: 6,
-    title: 'Energy Drink',
+    title: 'Protein Smoothie',
     description: {
       short: 'Boost Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
       long: 'Boost Energy Drink will help to become healthier and give you some extra energy for your daily workouts. It is a great drink for those who want to stay healthy and active. It is made from natural ingredients and has no artificial flavors or colors. It is also low in calories and sugar, so you can enjoy it without feeling guilty. Boost Energy Drink is a great way to get the energy you need to stay active and healthy.'
@@ -454,6 +472,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-09-15',
         image: '/images/avatars/5.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -461,6 +480,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-10-08',
         image: '/images/avatars/9.webp',
         comment: 'I love it',
         rating: 5
@@ -468,6 +488,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-11-01',
         image: '/images/avatars/15.webp',
         comment: 'Great product',
         rating: 4
@@ -476,19 +497,19 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
-        image: '/images/product/image1.webp',
+        title: 'Student Energy GEL',
+        description: 'Student Energy GEL will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'energy-gel/',
+        image: '/images/product/image5.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-original/',
-        image: '/images/product/image2.webp',
+        title: 'Fitness Powder',
+        description: 'Fitness Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'fitness-powder/',
+        image: '/images/product/image6.webp',
         price: 8.95,
         rating: 4
       }
@@ -525,6 +546,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-06-12',
         image: '/images/avatars/13.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -532,6 +554,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-08-03',
         image: '/images/avatars/1.webp',
         comment: 'I love it',
         rating: 5
@@ -539,6 +562,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-10-25',
         image: '/images/avatars/3.webp',
         comment: 'Great product',
         rating: 4
@@ -547,19 +571,19 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
-        image: '/images/product/image1.webp',
+        title: 'Energy Vitamins',
+        description: 'Energy Vitamins will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'energy-vitamins/',
+        image: '/images/product/image10.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-original/',
-        image: '/images/product/image2.webp',
+        title: 'Essential oil energy for elf',
+        description: 'Boost Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'essential-oil-energy/',
+        image: '/images/product/image4.webp',
         price: 8.95,
         rating: 4
       }
@@ -574,7 +598,7 @@ const Products: ProductTypes[] = [
     },
     composition: ['Cherry', 'Apple', 'Blueberry', 'Pineapple'],
     image: '/images/product/image9.webp',
-    link: 'protein-smoothie/',
+    link: 'energy-drink/',
     price: 9.95,
     stock: 10,
     rating: 4,
@@ -595,6 +619,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-06-12',
         image: '/images/avatars/1.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -602,6 +627,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-08-20',
         image: '/images/avatars/2.webp',
         comment: 'I love it',
         rating: 5
@@ -609,6 +635,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-10-01',
         image: '/images/avatars/3.webp',
         comment: 'Great product',
         rating: 4
@@ -617,17 +644,17 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
+        title: 'Boost Cherry Energy Drink',
+        description: 'Boost Cherry Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'boost-cherry/',
         image: '/images/product/image1.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        title: 'Boost Energy Original Drink',
+        description: 'Boost Energy Original Drink will help to become healthier and give you some extra energy for your daily workouts.',
         link: 'arasgrasa-original/',
         image: '/images/product/image2.webp',
         price: 8.95,
@@ -644,7 +671,7 @@ const Products: ProductTypes[] = [
     },
     composition: ['Cherry', 'Apple', 'Blueberry', 'Pineapple'],
     image: '/images/product/image10.webp',
-    link: 'energy-drink/',
+    link: 'energy-vitamins/',
     price: 7.45,
     stock: 10,
     rating: 4,
@@ -665,6 +692,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-06-04',
         image: '/images/avatars/4.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -672,6 +700,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-07-30',
         image: '/images/avatars/5.webp',
         comment: 'I love it',
         rating: 5
@@ -679,6 +708,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-09-20',
         image: '/images/avatars/6.webp',
         comment: 'Great product',
         rating: 4
@@ -687,19 +717,19 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
-        image: '/images/product/image1.webp',
+        title: 'Arasgrasa-Blueberry Powder',
+        description: 'Arasgrasa-Blueberry Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'arasgrasa-vegan/',
+        image: '/images/product/image3.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-original',
-        image: '/images/product/image2.webp',
+        title: 'Energy Drink',
+        description: 'Boost Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'protein-smoothie/',
+        image: '/images/product/image7.webp',
         price: 8.95,
         rating: 4
       }

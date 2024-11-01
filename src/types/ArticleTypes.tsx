@@ -6,6 +6,8 @@ type ArticleTypes = {
   description: string;
   image: string;
   link: string;
+  date: string;
+  author: string;
   content: {
     id: number;
     title: string | null;

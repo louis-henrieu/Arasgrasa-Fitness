@@ -20,6 +20,7 @@ type ProductTypes = {
   reviews: {
     id: number
     name: string
+    date: string
     image: string
     comment: string
     rating: number

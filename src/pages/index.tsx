@@ -19,7 +19,7 @@ const StyledCompanyName=styled(Link)(({theme})=>({fontWeight:500,textDecoration:
       textAlign: 'center',
       color: 'white',
     }}>
-      <h1>Unique fitness products for elves</h1><p>Made out of natural and eco-friendly ingridients</p>
+      <h1>Arasgrasa - Unique fitness products for elves</h1><p>Made out of natural and eco-friendly ingridients</p>
       <button style={{
         marginTop: '20px',
         padding: '10px 20px',

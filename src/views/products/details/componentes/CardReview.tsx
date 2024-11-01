@@ -5,10 +5,12 @@ import Avatar from '@mui/material/Avatar'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
 import Rating from "@mui/material/Rating"
+import { ProductReviewSchemaOrg } from 'src/views/schema-org'
 
-const CardLinkedIn = ({ review, color }: { review: { id: number, name: string, image: string, comment: string, rating: number }, color : string }) => {
+const CardLinkedIn = ({ review, color }: { review: { id: number, name: string, image: string, comment: string, rating: number, date: string }, color : string }) => {
   return (
     <Card sx={{ border: 0, boxShadow: 0, color: 'common.white', backgroundColor: color }}>
+      {/* <ProductReviewSchemaOrg author={review.name} date={review.date} reviewBody={review.comment} rating={review.rating} image={review.image} /> */}
       <CardContent sx={{ p: theme => `${theme.spacing(3.25, 5, 4.5)} !important` }}>
         <Rating precision={0.5} readOnly value={review.rating} />
         <Typography sx={{ mb: 3, color: 'common.white' }}>
