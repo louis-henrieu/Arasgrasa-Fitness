@@ -24,7 +24,7 @@ const ArticleSchemaOrg = ({ title, description, image, date, author, link, conte
 
   return (
     <Script
-      strategy="lazyOnload"
+      type="application/ld+json"
       dangerouslySetInnerHTML={{
         __html: `
             {
@@ -76,7 +76,7 @@ const ProductSchemaOrg = ({ name, description, sku, brand, price, currency, avai
 
   return (
     <Script
-      strategy="lazyOnload"
+      type="application/ld+json"
       dangerouslySetInnerHTML={{
         __html: `
             {
@@ -171,7 +171,8 @@ const ProductReviewSchemaOrg = ({ author, date, reviewBody, rating, image, produ
                     "@type": "Offer",
                     "priceCurrency": "EUR",
                     "price": "${product.price}",
-                    "availability": "InStock"
+                    "availability": "InStock",
+                    "priceValidUntil": "2025-11-01"
                 },
                 "aggregateRating": {
                     "@type": "AggregateRating",
