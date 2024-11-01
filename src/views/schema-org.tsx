@@ -119,6 +119,11 @@ interface ProductReviewSchemaOrgProps {
   product: {
     title: string;
     price: number;
+    image: string;
+    description: {
+      short: string;
+      long: string;
+    };
   }
 }
 
@@ -155,11 +160,18 @@ const ProductReviewSchemaOrg = ({ author, date, reviewBody, rating, image, produ
             "itemReviewed": {
                 "@type": "Product",
                 "name": "${product.title}",
+                "description": "${product.description.long}",
+                "image": "${based_url}${product.image}",
+                "shippingDetails": {
+                  "@type": "OfferShippingDetails",
+                  "shippingDestination": "ES",
+                  "estimatedShippingDelay": "PT3-5D"
+                },
                 "offers": {
                     "@type": "Offer",
                     "priceCurrency": "EUR",
                     "price": "${product.price}",
-                    "availability": "InStock",
+                    "availability": "InStock"
                 },
                 "aggregateRating": {
                     "@type": "AggregateRating",
