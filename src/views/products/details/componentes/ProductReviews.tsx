@@ -1,8 +1,9 @@
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import CardReview from "./CardReview";
+import { ProductReviewSchemaOrg } from "src/views/schema-org";
 
-const ProductReviews = ({ reviews }: { reviews: { id: number, name: string, image: string, comment: string, rating: number }[] }) => {
+const ProductReviews = ({ reviews }: { reviews: { id: number, name: string, image: string, comment: string, rating: number, date: string }[] }) => {
 
   const colors: string[] = ['#1D9BF0', '#3B5998', '#007BB6'];
 
@@ -13,6 +14,7 @@ const ProductReviews = ({ reviews }: { reviews: { id: number, name: string, imag
       </Grid>
       {reviews.map((review, index) => (
         <Grid key={index} item xs={12} sm={6} md={4}>
+          <ProductReviewSchemaOrg author={review.name} date={review.date} reviewBody={review.comment} rating={review.rating} image={review.image} />
           <CardReview review={review} color={colors[index % colors.length]} />
         </Grid>
       ))}

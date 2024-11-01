@@ -8,6 +8,7 @@ import ProductOtherPurchase from "./componentes/ProductOtherPurchase";
 import { useTheme } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Grid from "@mui/material/Grid";
+import { ProductReviewSchemaOrg, ProductSchemaOrg } from "src/views/schema-org";
 
 const ProductDetail = ({ product }: { product: ProductTypes }) => {
 
@@ -18,6 +19,7 @@ const ProductDetail = ({ product }: { product: ProductTypes }) => {
     <div>
       {isMatch ? (
         <>
+          <ProductSchemaOrg name={product.title} description={product.description.short} sku={product.id.toString()} brand="Arasgrasa Fitness" price={product.price.toString()} currency="EUR" availability="InStock" url={product.link} image={product.image} />
           <ProductHeader title={product.title} price={product.price} rating={product.rating} />
           <br/>
           <ProductImage image={product.image} title={product.title} />

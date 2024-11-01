@@ -31,7 +31,8 @@ const Products: ProductTypes[] = [
     reviews: [
       {
         id: 0,
-        name: 'John Doe',
+        name: 'Ben Smith',
+        date: '2024-06-12',
         image: '/images/avatars/7.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -39,13 +40,15 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-08-20',
         image: '/images/avatars/8.webp',
         comment: 'I love it',
         rating: 5
       },
       {
         id: 2,
-        name: 'Sam Smith',
+        name: 'Lily Brown',
+        date: '2024-10-01',
         image: '/images/avatars/12.webp',
         comment: 'Great product',
         rating: 4
@@ -102,23 +105,26 @@ const Products: ProductTypes[] = [
     reviews: [
       {
         id: 0,
-        name: 'John Doe',
+        name: 'Lena Smith',
+        date: '2024-07-23',
         image: '/images/avatars/3.webp',
-        comment: 'Very good flavor',
+        comment: 'Very good flavor, I like to drink it after my workout',
         rating: 4
       },
       {
         id: 1,
-        name: 'Jane Doe',
+        name: 'Corentin Lecourt',
+        date: '2024-09-15',
         image: '/images/avatars/5.webp',
-        comment: 'I love it',
+        comment: 'I love it, I drink it every day',
         rating: 5
       },
       {
         id: 2,
-        name: 'Sam Smith',
+        name: 'Jonathan Davis',
+        date: '2024-09-30',
         image: '/images/avatars/13.webp',
-        comment: 'Great product',
+        comment: 'Great product. I recommend it',
         rating: 4
       }
     ],
@@ -173,6 +179,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-08-23',
         image: '/images/avatars/3.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -180,6 +187,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-09-15',
         image: '/images/avatars/5.webp',
         comment: 'I love it. Using everyday.',
         rating: 5
@@ -187,6 +195,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-10-27',
         image: '/images/avatars/11.webp',
         comment: 'Great product',
         rating: 4
@@ -243,6 +252,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-08-23',
         image: '/images/avatars/3.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -250,6 +260,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-09-01',
         image: '/images/avatars/8.webp',
         comment: 'I love it',
         rating: 5
@@ -257,6 +268,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-10-23',
         image: '/images/avatars/13.webp',
         comment: 'Great product',
         rating: 4
@@ -314,6 +326,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-07-20',
         image: '/images/avatars/1.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -321,6 +334,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-08-15',
         image: '/images/avatars/5.webp',
         comment: 'I love it',
         rating: 5
@@ -328,6 +342,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-10-26',
         image: '/images/avatars/11.webp',
         comment: 'Great product',
         rating: 4
@@ -384,6 +399,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-08-03',
         image: '/images/avatars/10.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -391,6 +407,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-09-30',
         image: '/images/avatars/7.webp',
         comment: 'I love it',
         rating: 5
@@ -398,6 +415,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-10-31',
         image: '/images/avatars/13.webp',
         comment: 'Great product',
         rating: 4
@@ -454,6 +472,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-09-15',
         image: '/images/avatars/5.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -461,6 +480,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-10-08',
         image: '/images/avatars/9.webp',
         comment: 'I love it',
         rating: 5
@@ -468,6 +488,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-11-01',
         image: '/images/avatars/15.webp',
         comment: 'Great product',
         rating: 4
@@ -525,6 +546,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-06-12',
         image: '/images/avatars/13.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -532,6 +554,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-08-03',
         image: '/images/avatars/1.webp',
         comment: 'I love it',
         rating: 5
@@ -539,6 +562,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-10-25',
         image: '/images/avatars/3.webp',
         comment: 'Great product',
         rating: 4
@@ -595,6 +619,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-06-12',
         image: '/images/avatars/1.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -602,6 +627,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-08-20',
         image: '/images/avatars/2.webp',
         comment: 'I love it',
         rating: 5
@@ -609,6 +635,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-10-01',
         image: '/images/avatars/3.webp',
         comment: 'Great product',
         rating: 4
@@ -665,6 +692,7 @@ const Products: ProductTypes[] = [
       {
         id: 0,
         name: 'John Doe',
+        date: '2024-06-04',
         image: '/images/avatars/4.webp',
         comment: 'Very good flavor',
         rating: 4
@@ -672,6 +700,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         name: 'Jane Doe',
+        date: '2024-07-30',
         image: '/images/avatars/5.webp',
         comment: 'I love it',
         rating: 5
@@ -679,6 +708,7 @@ const Products: ProductTypes[] = [
       {
         id: 2,
         name: 'Sam Smith',
+        date: '2024-09-20',
         image: '/images/avatars/6.webp',
         comment: 'Great product',
         rating: 4
