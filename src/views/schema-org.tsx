@@ -151,7 +151,7 @@ const ProductReviewSchemaOrg = ({ productName, author, date, reviewBody, rating,
             "image": "${based_url}${image}",
             "itemReviewed": {
                 "@type": "Product",
-                "name": "${productName}",
+                "name": "${productName}"
             }
             }
             `,
