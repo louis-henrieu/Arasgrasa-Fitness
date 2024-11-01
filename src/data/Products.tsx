@@ -54,9 +54,9 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Boost Apple Energy Drink',
-        description: 'Boost Apple Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'boost-apple/',
+        title: 'Boost Energy Original Drink',
+        description: 'Boost Energy Original Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'arasgrasa-original/',
         image: '/images/product/image2.webp',
         price: 8.95,
         rating: 4
@@ -65,7 +65,7 @@ const Products: ProductTypes[] = [
         id: 1,
         title: 'Boost Blueberry Energy Drink',
         description: 'Boost Blueberry Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'boost-blueberry/',
+        link: 'arasgrasa-vegan/',
         image: '/images/product/image3.webp',
         price: 7.95,
         rating: 5
@@ -125,9 +125,9 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
+        title: 'Boost Cherry Energy Drink',
+        description: 'Boost Cherry Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'boost-cherry/',
         image: '/images/product/image1.webp',
         price: 9.95,
         rating: 4.5
@@ -135,7 +135,7 @@ const Products: ProductTypes[] = [
       {
         id: 1,
         title: 'Arasgrasa-Blueberry Powder',
-        description: 'Arasgrasa-Blueberry Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        description: 'Boost Blueberry Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
         link: 'arasgrasa-vegan/',
         image: '/images/product/image3.webp',
         price: 7.95,
@@ -195,17 +195,17 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
+        title: 'Boost Cherry Energy Drink',
+        description: 'Arasgrasa-Cherry Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'boost-cherry/',
         image: '/images/product/image1.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        title: 'Boost Energy Original Drink',
+        description: 'Boost Energy Original Drink will help to become healthier and give you some extra energy for your daily workouts.',
         link: 'arasgrasa-original/',
         image: '/images/product/image2.webp',
         price: 8.95,
@@ -265,19 +265,19 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
-        image: '/images/product/image1.webp',
+        title: 'Boost Energy Original Drink',
+        description: 'Boost Energy Original Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'arasgrasa-original/',
+        image: '/images/product/image2.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-original/',
-        image: '/images/product/image2.webp',
+        title: 'Student Energy GEL',
+        description: 'Student Energy GEL will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'energy-gel/',
+        image: '/images/product/image5.webp',
         price: 8.95,
         rating: 4
       }
@@ -336,17 +336,17 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
-        image: '/images/product/image1.webp',
+        title: 'Sour Apple POP',
+        description: 'Sour Apple is a refreshing alternative to traditional protein shakes. Featuring the same cutting-edge technology as our Clear Vegan Protein.',
+        link: 'protein-shake/',
+        image: '/images/product/image8.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        title: 'Boost Energy Original Drink',
+        description: 'Boost Energy Original Drink will help to become healthier and give you some extra energy for your daily workouts.',
         link: 'arasgrasa-original/',
         image: '/images/product/image2.webp',
         price: 8.95,
@@ -406,19 +406,19 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
-        image: '/images/product/image1.webp',
+        title: 'Essential oil energy for elf',
+        description: 'Boost Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'essential-oil-energy/',
+        image: '/images/product/image4.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-original/',
-        image: '/images/product/image2.webp',
+        title: 'Energy Vitamins',
+        description: 'Energy Vitamins will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'energy-vitamins/',
+        image: '/images/product/image10.webp',
         price: 8.95,
         rating: 4
       }
@@ -426,7 +426,7 @@ const Products: ProductTypes[] = [
   },
   {
     id: 6,
-    title: 'Energy Drink',
+    title: 'Protein Smoothie',
     description: {
       short: 'Boost Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
       long: 'Boost Energy Drink will help to become healthier and give you some extra energy for your daily workouts. It is a great drink for those who want to stay healthy and active. It is made from natural ingredients and has no artificial flavors or colors. It is also low in calories and sugar, so you can enjoy it without feeling guilty. Boost Energy Drink is a great way to get the energy you need to stay active and healthy.'
@@ -476,19 +476,19 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
-        image: '/images/product/image1.webp',
+        title: 'Student Energy GEL',
+        description: 'Student Energy GEL will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'energy-gel/',
+        image: '/images/product/image5.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-original/',
-        image: '/images/product/image2.webp',
+        title: 'Fitness Powder',
+        description: 'Fitness Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'fitness-powder/',
+        image: '/images/product/image6.webp',
         price: 8.95,
         rating: 4
       }
@@ -547,19 +547,19 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
-        image: '/images/product/image1.webp',
+        title: 'Energy Vitamins',
+        description: 'Energy Vitamins will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'energy-vitamins/',
+        image: '/images/product/image10.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-original/',
-        image: '/images/product/image2.webp',
+        title: 'Essential oil energy for elf',
+        description: 'Boost Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'essential-oil-energy/',
+        image: '/images/product/image4.webp',
         price: 8.95,
         rating: 4
       }
@@ -574,7 +574,7 @@ const Products: ProductTypes[] = [
     },
     composition: ['Cherry', 'Apple', 'Blueberry', 'Pineapple'],
     image: '/images/product/image9.webp',
-    link: 'protein-smoothie/',
+    link: 'energy-drink/',
     price: 9.95,
     stock: 10,
     rating: 4,
@@ -617,17 +617,17 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
+        title: 'Boost Cherry Energy Drink',
+        description: 'Boost Cherry Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'boost-cherry/',
         image: '/images/product/image1.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        title: 'Boost Energy Original Drink',
+        description: 'Boost Energy Original Drink will help to become healthier and give you some extra energy for your daily workouts.',
         link: 'arasgrasa-original/',
         image: '/images/product/image2.webp',
         price: 8.95,
@@ -644,7 +644,7 @@ const Products: ProductTypes[] = [
     },
     composition: ['Cherry', 'Apple', 'Blueberry', 'Pineapple'],
     image: '/images/product/image10.webp',
-    link: 'energy-drink/',
+    link: 'energy-vitamins/',
     price: 7.45,
     stock: 10,
     rating: 4,
@@ -687,19 +687,19 @@ const Products: ProductTypes[] = [
     others: [
       {
         id: 0,
-        title: 'Arasgrasa-Apple Powder',
-        description: 'Arasgrasa-Apple Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-apple/',
-        image: '/images/product/image1.webp',
+        title: 'Arasgrasa-Blueberry Powder',
+        description: 'Arasgrasa-Blueberry Powder will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'arasgrasa-vegan/',
+        image: '/images/product/image3.webp',
         price: 9.95,
         rating: 4.5
       },
       {
         id: 1,
-        title: 'Arasgrasa-Original Powder',
-        description: 'Arasgrasa-Original Powder will help to become healthier and give you some extra energy for your daily workouts.',
-        link: 'arasgrasa-original',
-        image: '/images/product/image2.webp',
+        title: 'Energy Drink',
+        description: 'Boost Energy Drink will help to become healthier and give you some extra energy for your daily workouts.',
+        link: 'protein-smoothie/',
+        image: '/images/product/image7.webp',
         price: 8.95,
         rating: 4
       }
