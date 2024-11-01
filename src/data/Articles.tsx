@@ -9,7 +9,7 @@ const Articles: ArticleTypes[] = [
       'Arasgrasa is a new product that has been proven to help with weight loss, increase energy levels, and improve overall health. It is made from all-natural ingredients and is safe for people of all ages. In this article, we will discuss the benefits of Arasgrasa and how it can help you achieve your health and wellness goals.',
     image: '/images/blog/article1/image.webp',
     link: 'benefits-arasgrasa-plant/',
-    date: '2024-08-01',
+    date: '2024-08-01 12:00:00UTC+1',
     author: 'Yuliia Kondratieva',
     content: [
       {
@@ -41,7 +41,7 @@ const Articles: ArticleTypes[] = [
       "Vitamine B6 is a water-soluble vitamin that is essential for good health. It is involved in more than 100 enzyme reactions in the body's cells, helping to metabolize amino acids from proteins and convert stored carbohydrates and fats into energy. It is important for brain development and for immune function.",
     image: '/images/blog/article2/image.webp',
     link: 'essential-vitamin-b6/',
-    date: '2024-08-22',
+    date: '2024-08-22 14:20:00UTC+1',
     author: 'Petro Feketa',
     content: [
       {
@@ -138,7 +138,7 @@ const Articles: ArticleTypes[] = [
       'Vitamin D is a fat-soluble vitamin essential for overall health and well-being. It plays a crucial role in helping the body absorb calcium and phosphorus from the food we eat, which are vital for maintaining strong bones and teeth. Additionally, vitamin D supports immune function, muscle health, and cell growth.',
     image: '/images/blog/article3/image.webp',
     link: 'you-need-vitamine-d/',
-    date: '2024-09-15',
+    date: '2024-09-15 20:55:00UTC+1',
     author: 'Louis-Henri Deschamps',
     content: [
       {
@@ -175,7 +175,7 @@ const Articles: ArticleTypes[] = [
       'Taurine is an amino acid that is found in high concentrations in the brain, heart, and muscles. It is essential for good health and has been shown to have a number of benefits, including improving heart health, reducing inflammation, and boosting the immune system. In this article, we will discuss the benefits of taurine and how it can help you stay young and healthy.',
     image: '/images/blog/article4/image.webp',
     link: 'taurine-helps-stay-young/',
-    date: '2024-09-30',
+    date: '2024-09-30 09:30:00UTC+1',
     author: 'Benjamin Broussard',
     content: [
       {
@@ -244,7 +244,7 @@ const Articles: ArticleTypes[] = [
       'Omega-3 fatty acids are a type of polyunsaturated fat that is essential for good health. They are found in high concentrations in fish and other seafood, as well as in some plant-based sources like flaxseed and walnuts. Omega-3 fatty acids have been shown to have a number of benefits, including reducing inflammation, improving heart health, and supporting brain function. In this article, we will discuss the benefits of omega-3 fatty acids and how they can help you achieve your health and wellness goals.',
     image: '/images/blog/article5/image.webp',
     link: 'benefits-omega-3-fatty-acids/',
-    date: '2024-10-15',
+    date: '2024-10-15 17:45:00UTC+1',
     author: 'Lise Dupont',
     content: [
       {
@@ -277,7 +277,7 @@ const Articles: ArticleTypes[] = [
       sharpen concentration, and elevate mood, making it a popular choice for those looking to boost productivity.',
     image: '/images/blog/article6/image.webp',
     link: 'caffeine-effects-risks-cautions/',
-    date: '2024-10-29',
+    date: '2024-10-29 10:00:00UTC+1',
     author: 'Julien Fournier',
     content: [
       {

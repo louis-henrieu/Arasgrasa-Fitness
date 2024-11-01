@@ -35,7 +35,8 @@ const ArticleSchemaOrg = ({ title, description, image, date, author, link, conte
             "datePublished": "${date}",
             "author": {
                 "@type": "Person",
-                "name": "${author}"
+                "name": "${author}",
+                "url": "${based_url}/blog/${link}"
             },
             "publisher": {
                 "@type": "Organization",
@@ -94,7 +95,8 @@ const ProductSchemaOrg = ({ name, description, sku, brand, price, currency, avai
                 "price": "${price}",
                 "priceCurrency": "${currency}",
                 "availability": "${availability}",
-                "url": "${based_url}/product/${url}"
+                "url": "${based_url}/product/${url}",
+                "priceValidUntil": "2025-11-01"
             },
             "image": [
                 "${based_url}${image}"
