@@ -12,13 +12,7 @@ const Product = () => {
   const product = Products.find((product) => product.link === (name + '/'));
 
   if (!product) return (
-    <Fragment>
-      <Head>
-        <title>Product not found - Arasgrasa Fitness</title>
-        <meta name="description" content="The product you are looking for does not exist. Please check the URL and try again." />
-      </Head>
-      <h1>Article not found</h1>
-    </Fragment>
+    <h1>Article not found</h1>
   );
   return (
     <Fragment>
