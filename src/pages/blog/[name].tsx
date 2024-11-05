@@ -11,13 +11,7 @@ const BlogPost = () => {
   const article = Articles.find((article) => article.link === (name + '/'));
 
   if (!article) return (
-    <Fragment>
-      <Head>
-        <title>Article not found - Arasgrasa Fitness</title>
-        <meta name="description" content="The article you are looking for does not exist. Please check the URL and try again." />
-      </Head>
-      <h1>Article not found</h1>
-    </Fragment>
+    <h1>Article not found</h1>
   );
   return (
     <Fragment>
