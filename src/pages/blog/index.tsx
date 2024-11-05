@@ -12,7 +12,6 @@ const BlogList = () => {
     <div>
       <Head>
         <meta name="description" content="Read the latest articles on fitness, health, and wellness on our blog. Stay updated with tips, guides, and expert advice." />
-        <link rel="canonical" href={`https://www.arasgrasa.fr/products/${currentBlogId || ''}`}/>
       </Head>
       <h1>Blog List</h1>
       <Grid container spacing={6}>
