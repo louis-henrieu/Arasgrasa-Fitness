@@ -5,7 +5,6 @@ const AboutUs = () => {
   return (
     <><Head>
     <meta name="description" content="Learn about Arasgrasa Fitness, the best energy food marketplace for elves. Discover our story, commitment to quality, and sustainable practices." />
-    <link rel="canonical" href="https://www.arasgrasa.fr/about-us/"/>
     </Head>
     <Container sx={{ padding: '2rem' }}>
       <Box sx={{ mb: '2rem', textAlign: 'center' }}>
