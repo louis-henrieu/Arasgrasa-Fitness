@@ -14,7 +14,7 @@ const Product = () => {
   if (!product) return (
     <Fragment>
       <Head>
-        <meta name="title" content="Product not found - Arasgrasa Fitness" />
+        <title>Product not found - Arasgrasa Fitness</title>
         <meta name="description" content="The product you are looking for does not exist. Please check the URL and try again." />
       </Head>
       <h1>Article not found</h1>
@@ -23,7 +23,7 @@ const Product = () => {
   return (
     <Fragment>
       <Head>
-        <meta name="title" content={product.title + "- Arasgrasa Fitness"} />
+        <title>{product.title + "- Arasgrasa Fitness"}</title>
         <meta name="description" content={product.description.short} />
       </Head>
       <ProductDetail product={product} />

@@ -13,7 +13,7 @@ const BlogPost = () => {
   if (!article) return (
     <Fragment>
       <Head>
-        <meta name="title" content="Article not found - Arasgrasa Fitness" />
+        <title>Article not found - Arasgrasa Fitness</title>
         <meta name="description" content="The article you are looking for does not exist. Please check the URL and try again." />
       </Head>
       <h1>Article not found</h1>
@@ -22,7 +22,7 @@ const BlogPost = () => {
   return (
     <Fragment>
       <Head>
-        <meta name="title" content={article.title + "- Arasgrasa Fitness"} />
+        <title>{article.title + "- Arasgrasa Fitness"}</title>
         <meta name="description" content={article.description} />
       </Head>
       <Article article={article} />
