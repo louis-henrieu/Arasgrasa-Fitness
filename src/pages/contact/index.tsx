@@ -42,7 +42,10 @@ const ContactUs = () => {
       <meta name="description" content="Get in touch with Arasgrasa Fitness. If you have any questions, feel free to contact us via phone or email. Follow us on social media for updates." />
     </Head>
     <Container sx={{ padding: '2rem' }}>
-        <Box sx={{ mt: 13, textAlign: 'center' }}>
+        <Box sx={{ mt: 7, textAlign: 'center' }}>
+          <Typography variant="h1" sx={{ fontWeight: 600, mb: 5}}>
+            Contact Us
+          </Typography>
           <CustomChip rounded size='small' skin='light' color='primary' label='Question' />
           <Typography variant='h4' sx={{ my: 2 }}>
             You still have a question?

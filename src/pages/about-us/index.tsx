@@ -9,7 +9,7 @@ const AboutUs = () => {
     </Head>
     <Container sx={{ padding: '2rem' }}>
       <Box sx={{ mb: '2rem', textAlign: 'center' }}>
-        <Typography variant="h2" sx={{ fontWeight: 700 }}>
+        <Typography variant="h1" sx={{ fontWeight: 700 }}>
           About Us
         </Typography>
       </Box>
