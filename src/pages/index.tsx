@@ -3,7 +3,6 @@ const StyledCompanyName=styled(Link)(({theme})=>({fontWeight:500,textDecoration:
   <><Head>
     <title>Arasgrasa Fitness - Unique fitness products for elves</title>
     <meta name="description" content="Discover unique fitness products for elves made out of natural and eco-friendly ingredients. Explore our range of energy drinks, protein powder, and vitamins." />
-    <link rel="canonical" href="https://www.arasgrasa.fr/"/>
   </Head><div><div style={{
     height: '500px', backgroundImage: 'url(/images/home/background.webp)', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative',
   }}><div style={{
