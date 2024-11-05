@@ -10,13 +10,6 @@ const ProductsList = () => {
   const currentProductId = router.query.id
   return (
     <div>
-      <Head>
-        <title>Product List - Arasgrasa Fitness</title>
-        <meta
-          name="description"
-          content="Discover the best energy drinks, protein powders, and vitamins for elves. Our products are made from natural ingredients and are designed to enhance your energy and performance."
-        />
-      </Head>
       <h1>Products List</h1>
       <Grid container spacing={6}>
         {Products.map((product: ProductTypes) => (
