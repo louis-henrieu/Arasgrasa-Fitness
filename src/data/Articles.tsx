@@ -154,7 +154,7 @@ const Articles: ArticleTypes[] = [
         id: 1,
         title: 'What products contain vitamin D ?',
         description: "The picture displays a variety of vitamin D-rich foods, each contributing to better health. It includes fatty fish like salmon, known for its high vitamin D content and omega-3 fatty acids, and cod liver oil, a concentrated source of vitamin D. There's also milk, which is often fortified with vitamin D, along with a glass of fortified orange juice. Additionally, egg yolks are shown, which naturally contain vitamin D and help support daily nutritional needs. Together, these foods represent some of the best dietary sources for boosting vitamin D intake and supporting bone health, immune function, and overall wellness.",
-        image: '/images/blog/vitamin-d.jpg',
+        image: '/images/blog/vitamin-d.webp',
         link: null,
         type: ContentArticleEnum.Image
       },
@@ -301,7 +301,7 @@ const Articles: ArticleTypes[] = [
         id: 2,
         title: 'What products contain vitamin B6 ?',
         description: 'Coffee, espresso, tea, green tea, decaffeinated tea, energy drinks.',
-        image: '/images/blog/caffeine.jpg',
+        image: '/images/blog/caffeine.webp',
         link: null,
         type: ContentArticleEnum.Image
       }
