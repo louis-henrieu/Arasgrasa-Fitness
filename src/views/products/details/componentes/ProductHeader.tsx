@@ -8,7 +8,7 @@ const ProductHeader = ({ title, price, rating}: { title: string, price: number, 
     <div>
       <Grid container spacing={2} alignItems='center' mb={3}>
         <Grid item>
-          <Typography variant='h2'>{title}</Typography>
+          <Typography variant='h1'>{title}</Typography>
         </Grid>
         <Grid item sx={{ flexGrow: 1, textAlign: 'right' }}>
           <Typography variant='h3' color='primary'>
