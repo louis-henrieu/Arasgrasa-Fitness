@@ -109,7 +109,6 @@ const App = (props: ExtendedAppProps) => {
     <Provider store={store}>
       <CacheProvider value={emotionCache}>
         <Head>
-          <title>{`${themeConfig.templateName}`}</title>
           <meta httpEquiv="content-type" content="text/html; charset=UTF-8" />
           <meta name="language" content="en"/>
           <meta name="theme-color" content="#f8f7fa"/>

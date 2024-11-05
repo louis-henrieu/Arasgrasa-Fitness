@@ -11,6 +11,7 @@ const ProductsList = () => {
   return (
     <div>
       <Head>
+        <title>Product List - Arasgrasa Fitness</title>
         <meta
           name="description"
           content="Discover the best energy drinks, protein powders, and vitamins for elves. Our products are made from natural ingredients and are designed to enhance your energy and performance."
