@@ -1,4 +1,6 @@
 import { useRouter } from "next/router";
+import { Fragment } from "react";
+import Head from "next/head";
 import Products from "src/data/Products";
 import ProductDetail from "src/views/products/details/ProductDetail";
 
@@ -9,10 +11,24 @@ const Product = () => {
 
   const product = Products.find((product) => product.link === (name + '/'));
 
-  if (!product)
-    return <h1>Product not found 😖</h1>;
-
-  return (<ProductDetail product={product} />);
+  if (!product) return (
+    <Fragment>
+      <Head>
+        <meta name="title" content="Product not found - Arasgrasa Fitness" />
+        <meta name="description" content="The product you are looking for does not exist. Please check the URL and try again." />
+      </Head>
+      <h1>Article not found</h1>
+    </Fragment>
+  );
+  return (
+    <Fragment>
+      <Head>
+        <meta name="title" content={product.title + "- Arasgrasa Fitness"} />
+        <meta name="description" content={product.description.short} />
+      </Head>
+      <ProductDetail product={product} />
+    </Fragment>
+  );
 }
 
 export default Product;

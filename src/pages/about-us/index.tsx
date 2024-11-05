@@ -4,6 +4,7 @@ import Head from 'next/head';
 const AboutUs = () => {
   return (
     <><Head>
+    <title>About Us - Arasgrasa Fitness</title>
     <meta name="description" content="Learn about Arasgrasa Fitness, the best energy food marketplace for elves. Discover our story, commitment to quality, and sustainable practices." />
     </Head>
     <Container sx={{ padding: '2rem' }}>

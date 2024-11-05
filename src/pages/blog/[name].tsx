@@ -1,4 +1,6 @@
 import { useRouter } from "next/router";
+import { Fragment } from "react";
+import Head from "next/head";
 import Articles from "src/data/Articles";
 import Article from "src/views/blog/articles details/Article";
 
@@ -9,9 +11,23 @@ const BlogPost = () => {
   const article = Articles.find((article) => article.link === (name + '/'));
 
   if (!article) return (
+    <Fragment>
+      <Head>
+        <meta name="title" content="Article not found - Arasgrasa Fitness" />
+        <meta name="description" content="The article you are looking for does not exist. Please check the URL and try again." />
+      </Head>
       <h1>Article not found</h1>
+    </Fragment>
   );
-  return (<Article article={article} />)
+  return (
+    <Fragment>
+      <Head>
+        <meta name="title" content={article.title + "- Arasgrasa Fitness"} />
+        <meta name="description" content={article.description} />
+      </Head>
+      <Article article={article} />
+    </Fragment>
+  );
 };
 
 export default BlogPost;
