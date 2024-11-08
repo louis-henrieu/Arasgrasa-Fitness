@@ -12,6 +12,7 @@ const Product = ({ product }: { product: ProductTypes }) => {
       <Head>
         <title>{product.title + "- Arasgrasa Fitness"}</title>
         <meta name="description" content={product.description.short} />
+        <link rel="canonical" href={`https://www.arasgrasa.fr/product/${product.link}`} />
       </Head>
       <ProductDetail product={product} />
     </Fragment>
