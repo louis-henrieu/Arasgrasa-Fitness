@@ -13,7 +13,7 @@ const BlogList = () => {
       <Head>
         <title>Blog List - Arasgrasa Fitness</title>
         <meta name="description" content="Read the latest articles on fitness, health, and wellness on our blog. Stay updated with tips, guides, and expert advice." />
-        <link rel="canonical" href="https://www.arasgrasa.fr/blog/" />
+        <link rel="canonical" href="https://arasgrasa.fr/blog/" />
       </Head>
       <h1>Blog List</h1>
       <Grid container spacing={6}>

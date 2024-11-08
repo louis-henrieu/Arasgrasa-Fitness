@@ -40,7 +40,7 @@ const ContactUs = () => {
     <><Head>
       <title>Contact Us - Arasgrasa Fitness</title>
       <meta name="description" content="Get in touch with Arasgrasa Fitness. If you have any questions, feel free to contact us via phone or email. Follow us on social media for updates." />
-      <link rel="canonical" href="https://www.arasgrasa.fr/contact/" />
+      <link rel="canonical" href="https://arasgrasa.fr/contact/" />
     </Head>
     <Container sx={{ padding: '2rem' }}>
         <Box sx={{ mt: 7, textAlign: 'center' }}>

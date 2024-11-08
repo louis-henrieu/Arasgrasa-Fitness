@@ -14,7 +14,7 @@ const BlogPost = ({ article }: { article: ArticleTypes }) => {
       <Head>
         <title>{article.title + "- Arasgrasa Fitness"}</title>
         <meta name="description" content={article.description} />
-        <link rel="canonical" href={`https://www.arasgrasa.fr/blog/${article.link}`} />
+        <link rel="canonical" href={`https://arasgrasa.fr/blog/${article.link}`} />
       </Head>
       <Article article={article} />
     </Fragment>
