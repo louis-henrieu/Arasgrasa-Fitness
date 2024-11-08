@@ -12,11 +12,12 @@ const ProductsList = () => {
     <div>
       <Head>
         <title>Product List - Arasgrasa Fitness</title>
-        <meta
-          name="description"
-          content="Discover the best energy drinks, protein powders, and vitamins for elves. Our products are made from natural ingredients and are designed to enhance your energy and performance."
-        />
+        <meta name="description" content="Discover top energy drinks, protein powders, and vitamins for elves. Natural ingredients to boost energy and performance." />
         <link rel="canonical" href="https://arasgrasa.fr/product/" />
+        <meta property="og:description" content="Discover top energy drinks, protein powders, and vitamins for elves. Natural ingredients to boost energy and performance." />
+        <meta property="og:url" content="https://arasgrasa.fr/product/" />w
+        <meta property="twitter:description" content="Discover top energy drinks, protein powders, and vitamins for elves. Natural ingredients to boost energy and performance." />
+        <meta property="twitter:url" content="https://arasgrasa.fr/product/" />
       </Head>
       <h1>Products List</h1>
       <Grid container spacing={6}>

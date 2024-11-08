@@ -125,7 +125,16 @@ const App = (props: ExtendedAppProps) => {
           <meta property="og:title" content="Arasgrasa Fitness - Best Energy Food Marketplace in the world"/>
           <meta property="og:description" content="The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products."/>
           <meta property="og:image" content="https://arasgrasa.fr/images/flavicon.webp"/>
-          <meta property="og:url" content="https://arasgrasa.fr/"/>
+          <meta property="og:url" content="https://arasgrasa.fr"/>
+          <meta property="og:site_name" content="Arasgrasa Fitness"/>
+          <meta property="og:type" content="website"/>
+          <meta name="twitter:card" content="summary"/>
+          <meta name="twitter:site" content="@arasgrasa"/>
+          <meta name="twitter:creator" content="@arasgrasa"/>
+          <meta name="twitter:title" content="Arasgrasa Fitness - Best Energy Food Marketplace in the world"/>
+          <meta name="twitter:description" content="The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products."/>
+          <meta name="twitter:image" content="https://arasgrasa.fr/images/flavicon.webp"/>
+          <link rel='icon' href='/images/flavicon.webp' type='image/webp' />
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=G-MEWLRD35LB`}
             strategy="afterInteractive"

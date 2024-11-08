@@ -13,6 +13,16 @@ const Product = ({ product }: { product: ProductTypes }) => {
         <title>{product.title + "- Arasgrasa Fitness"}</title>
         <meta name="description" content={product.description.short} />
         <link rel="canonical" href={`https://arasgrasa.fr/product/${product.link}`} />
+        <meta property="og:title" content={`${product.title} - Arasgrasa Fitness`} />
+        <meta property="og:description" content={product.description.short} />
+        <meta property="og:url" content={`https://arasgrasa.fr/product/${product.link}`} />
+        <meta property="og:image" content={`https://arasgrasa.fr${product.image}`} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content={`${product.title} - Arasgrasa Fitness`} />
+        <meta property="twitter:description" content={product.description.short} />
+        <meta property="twitter:image" content={`https://arasgrasa.fr${product.image}`} />
+        <meta property="twitter:url" content={`https://arasgrasa.fr/product/${product.link}`} />
       </Head>
       <ProductDetail product={product} />
     </Fragment>
