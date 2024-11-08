@@ -41,7 +41,9 @@ const ContactUs = () => {
       <title>Contact Us - Arasgrasa Fitness</title>
       <meta name="description" content="Get in touch with Arasgrasa Fitness. If you have any questions, feel free to contact us via phone or email. Follow us on social media for updates." />
       <link rel="canonical" href="https://arasgrasa.fr/contact/" />
+      <meta property='og:title' content='Contact Us - Arasgrasa Fitness' />
       <meta property="og:description" content="Get in touch with Arasgrasa Fitness. If you have any questions, feel free to contact us via phone or email. Follow us on social media for updates." />
+      <meta property="og:image" content="https://arasgrasa.fr/images/flavicon.webp" />
       <meta property="og:url" content="https://arasgrasa.fr/contact/" />
       <meta property="twitter:description" content="Get in touch with Arasgrasa Fitness. If you have any questions, feel free to contact us via phone or email. Follow us on social media for updates." />
       <meta property="twitter:url" content="https://arasgrasa.fr/contact/" />

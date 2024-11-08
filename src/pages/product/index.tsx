@@ -14,8 +14,10 @@ const ProductsList = () => {
         <title>Product List - Arasgrasa Fitness</title>
         <meta name="description" content="Discover top energy drinks, protein powders, and vitamins for elves. Natural ingredients to boost energy and performance." />
         <link rel="canonical" href="https://arasgrasa.fr/product/" />
+        <meta property="og:title" content="Product List - Arasgrasa Fitness" />
         <meta property="og:description" content="Discover top energy drinks, protein powders, and vitamins for elves. Natural ingredients to boost energy and performance." />
-        <meta property="og:url" content="https://arasgrasa.fr/product/" />w
+        <meta property="og:image" content="https://arasgrasa.fr/images/flavicon.webp" />
+        <meta property="og:url" content="https://arasgrasa.fr/product/" />
         <meta property="twitter:description" content="Discover top energy drinks, protein powders, and vitamins for elves. Natural ingredients to boost energy and performance." />
         <meta property="twitter:url" content="https://arasgrasa.fr/product/" />
       </Head>

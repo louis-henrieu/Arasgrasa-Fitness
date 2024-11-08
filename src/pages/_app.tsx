@@ -122,10 +122,6 @@ const App = (props: ExtendedAppProps) => {
           <meta name='metadataBaseUri' content='https://arasgrasa.fr/' />          
           <meta name='keywords' content='arasgrasa, arasgrasa fitness, best energy food marketplace, arasgrasa burger, fitness, gym, workout, yoga, bodybuilding, health, cardio, nutrition energy drink, sport performance, sport nutrition, sport drink, vitamins' />
           <meta name='viewport' content='width=device-width, initial-scale=1' />
-          <meta property="og:title" content="Arasgrasa Fitness - Best Energy Food Marketplace in the world"/>
-          <meta property="og:description" content="The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products."/>
-          <meta property="og:image" content="https://arasgrasa.fr/images/flavicon.webp"/>
-          <meta property="og:url" content="https://arasgrasa.fr"/>
           <meta property="og:site_name" content="Arasgrasa Fitness"/>
           <meta property="og:type" content="website"/>
           <meta name="twitter:card" content="summary"/>

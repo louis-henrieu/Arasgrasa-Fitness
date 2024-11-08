@@ -14,7 +14,9 @@ const BlogList = () => {
         <title>Blog List - Arasgrasa Fitness</title>
         <meta name="description" content="Read the latest articles on fitness, health, and wellness on our blog. Stay updated with tips, guides, and expert advice." />
         <link rel="canonical" href="https://arasgrasa.fr/blog/" />
+        <meta property="og:title" content="Blog List - Arasgrasa Fitness" />
         <meta property="og:description" content="Read the latest articles on fitness, health, and wellness on our blog. Stay updated with tips, guides, and expert advice." />
+        <meta property="og:image" content="https://arasgrasa.fr/images/flavicon.webp" />
         <meta property="og:url" content="https://arasgrasa.fr/blog/" />
         <meta property="twitter:description" content="Read the latest articles on fitness, health, and wellness on our blog. Stay updated with tips, guides, and expert advice." />
         <meta property="twitter:url" content="https://arasgrasa.fr/blog/" />

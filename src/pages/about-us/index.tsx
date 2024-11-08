@@ -7,6 +7,9 @@ const AboutUs = () => {
     <title>About Us - Arasgrasa Fitness</title>
     <meta name="description" content="Learn about Arasgrasa Fitness, the best energy food marketplace for elves. Discover our story, commitment to quality, and sustainable practices." />
     <link rel="canonical" href="https://arasgrasa.fr/about-us/" />
+    <meta property="og:title" content="About Us - Arasgrasa Fitness" />
+    <meta property="og:description" content="Learn about Arasgrasa Fitness, the best energy food marketplace for elves. Discover our story, commitment to quality, and sustainable practices." />
+    <meta property="og:image" content="https://arasgrasa.fr/images/flavicon.webp" />
     <meta property="og:url" content="https://arasgrasa.fr/about-us/" />
     <meta property="twitter:url" content="https://arasgrasa.fr/about-us/" />
     </Head>
