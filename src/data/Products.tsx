@@ -747,18 +747,18 @@ const Products: ProductTypes[] = [
     link: 'protein-bar/',
     price: 2.95,
     stock: 10,
-    rating: 4,
+    rating: 5,
     category: 'Food',
     choice: [
       {
         id: 0,
         name: 'Flavor',
-        value: ['Cherry', 'Apple', 'Blueberry', 'Pineapple']
+        value: ['Cherry', 'Apple', 'Blueberry', 'Chocolate']
       },
       {
         id: 1,
-        name: 'Size',
-        value: ['500ml', '1L', '2L']
+        name: 'Quantity',
+        value: ['10', '20', '30']
       }
     ],
     reviews: [

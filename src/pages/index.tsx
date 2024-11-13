@@ -68,14 +68,14 @@ const StyledCompanyName=styled(Link)(({theme})=>({fontWeight:500,textDecoration:
               </Typography><br /><Typography href='tel:+1234567890' target='_blank' component={StyledCompanyName}>Phone: +1234567890</Typography>
             </div><div><h3>Follow Us</h3>
               <Typography
-                href='https://facebook.com'
+                href='https://www.facebook.com/groups/8830195950428499/'
                 target='_blank'
                 component={StyledCompanyName}
                 sx={{ marginRight: '10px' }}
               >
                 Facebook
               </Typography><Typography
-                href='https://twitter.com'
+                href='https://x.com/arasgrasa'
                 target='_blank'
                 component={StyledCompanyName}
                 sx={{ marginRight: '10px' }}>Twitter</Typography>

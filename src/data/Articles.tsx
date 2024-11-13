@@ -315,7 +315,77 @@ const Articles: ArticleTypes[] = [
         type: ContentArticleEnum.Image
       }
     ]
-  }
+  },
+  {
+    id: 6,
+    title: 'Common Fitness Myths Debunked: What You Need to Know',
+    description: {
+      short: 'When it comes to fitness, there are countless myths floating around that can be misleading or even hinder your progress. These myths often lead to confusion and frustration, making it harder to achieve your fitness goals. Whether you’re new to working out or an experienced gym-goer, it’s important to separate fact from fiction to ensure you’re making the best choices for your body. Today, we’re setting the record straight on some of the most common misconceptions about working out and getting healthy.',
+      long: 'When it comes to fitness, there are countless myths floating around that can be misleading or even hinder your progress. Today, we’re setting the record straight on some of the most common misconceptions about working out and getting healthy.'
+    },
+    image: '/images/blog/article7/fitness-myths.webp',
+    link: 'fitness-myths-debunked/',
+    content: [
+      {
+        id: 0,
+        title: 'Myth 1: Lifting Weights Will Make You Bulky',
+        description: 'One of the biggest fitness myths is that lifting weights will automatically make you bulky, especially for women. The reality is that building significant muscle mass requires intense training, a specific diet, and often, years of effort. Strength training is fantastic for toning muscles, boosting metabolism, and improving overall strength. Women, in particular, have lower testosterone levels than men, making it much harder to develop a “bulky” physique. Truth: Lifting weights can help you get leaner, more toned, and healthier.',
+        image: null,
+        link: null,
+        type: ContentArticleEnum.Text
+      },
+      {
+        id: 1,
+        title: 'Myth 2: You Can Target Fat Loss in Specific Areas',
+        description: 'Many people believe that doing exercises that target specific body parts, like crunches for belly fat or leg lifts for thigh fat, will lead to fat loss in those areas. This concept is known as “spot reduction,” but unfortunately, it’s a myth. Fat loss occurs evenly throughout the body and is mostly influenced by diet and overall exercise habits. Truth: You can’t pick where you lose fat, but a balanced workout routine and proper nutrition will help you get results.',
+        image: null,
+        link: null,
+        type: ContentArticleEnum.Text
+      },
+      {
+        id: 2,
+        title: 'Myth 3: Cardio Is the Best Way to Lose Weight',
+        description: 'Cardio is a fantastic way to burn calories and improve cardiovascular health, but it’s not the only solution for weight loss. Strength training, high-intensity interval training (HIIT), and a balanced diet are equally important for shedding pounds and building lean muscle. Truth: A combination of cardio, strength training, and healthy eating is the most effective way to lose weight and keep it off.',
+        image: null,
+        link: null,
+        type: ContentArticleEnum.Text
+      },
+      {
+        id: 3,
+        title: 'Myth 4: You Need to Exercise Every Day to See Results',
+        description: 'While consistency is key for progress, exercising every single day can lead to burnout, overtraining, and injury. Rest days are essential for muscle recovery, injury prevention, and overall well-being. Truth: Aim for 3-5 days of exercise per week, with a mix of strength training, cardio, and flexibility work.',
+        image: null,
+        link: null,
+        type: ContentArticleEnum.Text
+      },
+      {
+        id: 4,
+        title: 'Myth 5: You Can Out-Exercise a Bad Diet',
+        description: 'No matter how much you work out, you can’t out-train a poor diet. Nutrition is the foundation of health and fitness, and it plays a significant role in weight loss, muscle gain, and overall well-being. Truth: Focus on eating a balanced diet full of whole foods, lean proteins, healthy fats, and plenty of fruits and vegetables to support your fitness goals.',
+        image: null,
+        link: null,
+        type: ContentArticleEnum.Text
+      },
+      {
+        id: 5,
+        title: 'Myth 6: You Need to Spend Hours in the Gym to Get Results',
+        description: 'Quality over quantity is key when it comes to exercise. Short, intense workouts can be just as effective as longer sessions, especially when you focus on compound movements, high-intensity intervals, and proper form. Truth: You can get a great workout in 30 minutes or less with the right plan and mindset.',
+        image: null,
+        link: null,
+        type: ContentArticleEnum.Text
+      },
+      {
+        id: 6,
+        title: 'Myth 7: You Should Avoid Carbs to Lose Weight',
+        description: 'Carbohydrates are an essential macronutrient that provides energy for your body and brain. While some people may benefit from reducing their carb intake, cutting them out completely can lead to nutrient deficiencies, low energy levels, and poor workout performance. Truth: Focus on whole, unprocessed carbs like fruits, vegetables, whole grains, and legumes for sustained energy and optimal health.',
+        image: null,
+        link: null,
+        type: ContentArticleEnum.Text
+      }
+    ],
+    date: '2024-11-08 12:00:00UTC+1',
+    author: 'Jeanne Lefevre'
+  },
 ]
 
 export default Articles
