@@ -373,7 +373,7 @@ const Products: ProductTypes[] = [
     id: 5,
     title: 'Fitness Powder',
     description: {
-      short: 'Fitness Powder is made just for you if you need a quick energy boost.',
+      short: 'Fitness Powder is made just for you if you need a quick energy boost and a great product for those who want to stay healthy and active.',
       long: 'Fitness Powder is made just for you if you need a quick energy boost. It is a great product for those who want to stay healthy and active. It is made from natural ingredients and has no artificial flavors or colors. It is also low in calories and sugar, so you can enjoy it without feeling guilty.'
     },
     composition: ['Cherry', 'Apple', 'Blueberry', 'Pineapple'],
@@ -666,7 +666,7 @@ const Products: ProductTypes[] = [
     id: 9,
     title: 'Energy Vitamins',
     description: {
-      short: 'Energy Vit.',
+      short: 'Energy Vitamins will help to become healthier and give you some extra energy for your daily workouts.',
       long: 'Boost Energy Drink will help to become healthier and give you some extra energy for your daily workouts. It is a great drink for those who want to stay healthy and active. It is made from natural ingredients and has no artificial flavors or colors. It is also low in calories and sugar, so you can enjoy it without feeling guilty. Boost Energy Drink is a great way to get the energy you need to stay active and healthy.'
     },
     composition: ['Cherry', 'Apple', 'Blueberry', 'Pineapple'],

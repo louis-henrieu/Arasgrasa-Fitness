@@ -3,7 +3,10 @@ import { ContentArticleEnum } from "./ContentArticleEnum";
 type ArticleTypes = {
   id: number;
   title: string;
-  description: string;
+  description: {
+    short: string;
+    long: string;
+  }
   image: string;
   link: string;
   date: string;

@@ -3,6 +3,12 @@ const StyledCompanyName=styled(Link)(({theme})=>({fontWeight:500,textDecoration:
   <><Head>
     <title>Arasgrasa Fitness - Unique fitness products for elves</title>
     <meta name="description" content="Discover unique fitness products for elves made out of natural and eco-friendly ingredients. Explore our range of energy drinks, protein powder, and vitamins." />
+    <link rel="canonical" href="https://arasgrasa.fr" />
+    <meta property='og:title' content='Arasgrasa Fitness - Unique fitness products for elves' />
+    <meta property="og:description" content="Discover unique fitness products for elves made out of natural and eco-friendly ingredients. Explore our range of energy drinks, protein powder, and vitamins." />
+    <meta property="og:image" content="https://arasgrasa.fr/images/flavicon.webp" />
+    <meta property="og:url" content="https://arasgrasa.fr" />
+    <meta property="twitter:url" content="https://arasgrasa.fr" />
   </Head><div><div style={{
     height: '500px', backgroundImage: 'url(/images/home/background.webp)', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative',
   }}><div style={{
@@ -43,7 +49,7 @@ const StyledCompanyName=styled(Link)(({theme})=>({fontWeight:500,textDecoration:
     </Typography><button style={{
       marginTop: '20px', padding: '10px 20px', backgroundColor: '#4DE287', border: 'none', color: '#333', fontSize: '16px', cursor: 'pointer', transition: 'background-color 0.3s',
     }} onClick={() => router.push('/blog')}>Learn more in our Blog</button>
-  </div></Grid><Grid item xs={12} sm={6} md={4}><Card sx={{ marginTop: '35px' }}><a href='/blog/benefits-arasgrasa-plant' style={{ textDecoration: 'none' }}><CardMedia sx={{ height: '14.5625rem' }} image='/images/blog/article1/image.webp' /><CardContent><Typography variant='h5' sx={{ mb: 2, display: 'flex', justifyContent: 'center' }}>The benefits of Arasgrasa</Typography>
+  </div></Grid><Grid item xs={12} sm={6} md={4}><Card sx={{ marginTop: '35px' }}><a href='/blog/benefits-arasgrasa-plant/' style={{ textDecoration: 'none' }}><CardMedia sx={{ height: '14.5625rem' }} image='/images/blog/article1/image.webp' /><CardContent><Typography variant='h5' sx={{ mb: 2, display: 'flex', justifyContent: 'center' }}>The benefits of Arasgrasa</Typography>
     <Typography sx={{ color: 'text.secondary', display: 'flex', justifyContent: 'center' }}>
       "Amazing product, keeps me healthy and full of energy"
     </Typography><Typography sx={{ color: 'text.secondary', display: 'flex', justifyContent: 'center' }}>-Father Elf</Typography>

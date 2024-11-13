@@ -14,7 +14,7 @@ const BlogDetail = ({ article }: { article: ArticleTypes }) => {
           <Typography variant='h5' sx={{ mb: 2 }}>
             {article.title}
           </Typography>
-          <Typography sx={{ color: 'text.secondary' }}>{article.description}</Typography>
+          <Typography sx={{ color: 'text.secondary' }}>{article.description.long}</Typography>
         </CardContent>
       </a>
     </Card>

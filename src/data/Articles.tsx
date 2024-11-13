@@ -5,8 +5,10 @@ const Articles: ArticleTypes[] = [
   {
     id: 0,
     title: 'The benefits of Arasgrasa',
-    description:
-      'Arasgrasa is a new product that has been proven to help with weight loss, increase energy levels, and improve overall health. It is made from all-natural ingredients and is safe for people of all ages. In this article, we will discuss the benefits of Arasgrasa and how it can help you achieve your health and wellness goals.',
+    description: {
+      short: 'Arasgrasa is a new product that has been proven to help with weight loss, increase energy levels, and improve overall health.',
+      long: 'Arasgrasa is a new product that has been proven to help with weight loss, increase energy levels, and improve overall health. It is made from all-natural ingredients and is safe for people of all ages. In this article, we will discuss the benefits of Arasgrasa and how it can help you achieve your health and wellness goals.'
+    },
     image: '/images/blog/article1/image.webp',
     link: 'benefits-arasgrasa-plant/',
     date: '2024-08-01 12:00:00UTC+1',
@@ -37,8 +39,10 @@ const Articles: ArticleTypes[] = [
   {
     id: 1,
     title: 'The essential about vitamin B6',
-    description:
-      "Vitamine B6 is a water-soluble vitamin that is essential for good health. It is involved in more than 100 enzyme reactions in the body's cells, helping to metabolize amino acids from proteins and convert stored carbohydrates and fats into energy. It is important for brain development and for immune function.",
+    description: {
+      short: "Vitamine B6 is a water-soluble vitamin that is essential for good health.",
+      long: "Vitamine B6 is a water-soluble vitamin that is essential for good health. It is involved in more than 100 enzyme reactions in the body's cells, helping to metabolize amino acids from proteins and convert stored carbohydrates and fats into energy. It is important for brain development and for immune function."
+    },
     image: '/images/blog/article2/image.webp',
     link: 'essential-vitamin-b6/',
     date: '2024-08-22 14:20:00UTC+1',
@@ -55,7 +59,7 @@ const Articles: ArticleTypes[] = [
       },
       {
         id: 1,
-        title: ' What does vitamin B6 do? Why do I need vitamin B6? ',
+        title: 'What does vitamin B6 do? Why do I need vitamin B6?',
         description:
           "Dr. Jim discusses how vitamin B6 works to promote the hundreds of biochemical reactions necessary for protein synthesis and it's importance for immune and nervous system function, the manufacture of red blood cells, and the production of tryptophan a critical nervous system hormone.",
         image: null,
@@ -113,7 +117,7 @@ const Articles: ArticleTypes[] = [
       },
       {
         id: 7,
-        title: ' 6. Vitamin B6 Elixirs',
+        title: 'Vitamin B6 Elixirs',
         description:
           'In the society, doctors and healers often create elixirs enriched with vitamin B6 to meet all the possible needs. Some of these elixirs are specifically designed to: Strengthen Magic: By providing constant boost of energy, our delicious and healthy drinks allow elves to channel their powers and forces more effectively even if they are coming from caves. Promote Healing: When mixed with other medicinal herbs, vitamin B6 stimulates cellular regeneration and speeds the healing of wounds. Maintain Inner Harmony: Infusions of vitamin B6-rich leaves are often served during rituals to bring calm and serenity.',
         image: null,
@@ -133,9 +137,11 @@ const Articles: ArticleTypes[] = [
   },
   {
     id: 2,
-    title: 'Why do we need Vitamin D? What happens when we lack it ?',
-    description:
-      'Vitamin D is a fat-soluble vitamin essential for overall health and well-being. It plays a crucial role in helping the body absorb calcium and phosphorus from the food we eat, which are vital for maintaining strong bones and teeth. Additionally, vitamin D supports immune function, muscle health, and cell growth.',
+    title: 'When we lack vitamin D, why and what happens?',
+    description: {
+      short: 'Vitamin D is a fat-soluble vitamin essential for overall health and well-being.',
+      long: 'Vitamin D plays a crucial role in helping the body absorb calcium and phosphorus from the food we eat, which are vital for maintaining strong bones and teeth. Additionally, vitamin D supports immune function, muscle health, and cell growth.'
+    },
     image: '/images/blog/article3/image.webp',
     link: 'you-need-vitamine-d/',
     date: '2024-09-15 20:55:00UTC+1',
@@ -143,7 +149,7 @@ const Articles: ArticleTypes[] = [
     content: [
       {
         id: 0,
-        title: ' 23 Surprising Benefits of Vitamin D and Consequences of Low Vitamin D ',
+        title: '23 Surprising Benefits of Vitamin D and Consequences of Low Vitamin D',
         description:
           'Dr. Dawn-Elise Snipes discusses 23 Surprising Benefits of Vitamin D and Consequences of Low Vitamin D including mood and immunity improvement.  DocSnipes is a Licensed Professional Counselor and Qualified Clinical Supervisor.  She received her PhD in Mental Health Counseling from the University of Florida in 2002.  In addition to being a practicing clinician, she has provided training to counselors, social workers, nurses and case managers internationally since 2006 through AllCEUs.com 23 Surprising Benefits of Vitamin D.',
         image: null,
@@ -171,8 +177,10 @@ const Articles: ArticleTypes[] = [
   {
     id: 3,
     title: 'How the Taurine helps to stay young',
-    description:
-      'Taurine is an amino acid that is found in high concentrations in the brain, heart, and muscles. It is essential for good health and has been shown to have a number of benefits, including improving heart health, reducing inflammation, and boosting the immune system. In this article, we will discuss the benefits of taurine and how it can help you stay young and healthy.',
+    description: {
+      short: 'Taurine is an amino acid that is found in high concentrations in the brain, heart, and muscles.',
+      long: 'Taurine is an amino acid that is found in high concentrations in the brain, heart, and muscles. It is essential for good health and has been shown to have a number of benefits, including improving heart health, reducing inflammation, and boosting the immune system. In this article, we will discuss the benefits of taurine and how it can help you stay young and healthy.'
+    },
     image: '/images/blog/article4/image.webp',
     link: 'taurine-helps-stay-young/',
     date: '2024-09-30 09:30:00UTC+1',
@@ -240,8 +248,10 @@ const Articles: ArticleTypes[] = [
   {
     id: 4,
     title: 'The benefits of Omega-3 fatty acids',
-    description:
-      'Omega-3 fatty acids are a type of polyunsaturated fat that is essential for good health. They are found in high concentrations in fish and other seafood, as well as in some plant-based sources like flaxseed and walnuts. Omega-3 fatty acids have been shown to have a number of benefits, including reducing inflammation, improving heart health, and supporting brain function. In this article, we will discuss the benefits of omega-3 fatty acids and how they can help you achieve your health and wellness goals.',
+    description: {
+      short: 'Omega-3 fatty acids are a type of polyunsaturated fat that is essential for good health.',
+      long: 'Omega-3 fatty acids are a type of polyunsaturated fat that is essential for good health. They are found in high concentrations in fish and other seafood, as well as in some plant-based sources like flaxseed and walnuts. Omega-3 fatty acids have been shown to have a number of benefits, including reducing inflammation, improving heart health, and supporting brain function. In this article, we will discuss the benefits of omega-3 fatty acids and how they can help you achieve your health and wellness goals.'
+    },
     image: '/images/blog/article5/image.webp',
     link: 'benefits-omega-3-fatty-acids/',
     date: '2024-10-15 17:45:00UTC+1',
@@ -249,7 +259,7 @@ const Articles: ArticleTypes[] = [
     content: [
       {
         id: 0,
-        title: ' Omega 3 Fatty Acids: What They Are and Why You Need Them | National Geographic ',
+        title: 'Omega 3 Fatty Acids: What They Are and Why You Need Them | National Geographic',
         description:
           'In her new book Life Is Your Best Medicine, Dr. Tieraona Low Dog weaves together the wisdom of traditional medicine and the knowledge of modern-day medicine into an elegant message of health and self-affirmation for women of every age.',
         image: null,
@@ -258,7 +268,7 @@ const Articles: ArticleTypes[] = [
       },
       {
         id: 1,
-        title: ' Why You Need Omega 3 Fatty Acids',
+        title: 'Why You Need Omega 3 Fatty Acids',
         description:
           'Omega-3 fatty acids are essential fats that the body cannot produce on its own, so they must be obtained through diet. They play a key role in brain function, reduce inflammation, and support heart health by lowering blood pressure and improving cholesterol levels. Common sources include fatty fish (like salmon), flaxseeds, and walnuts. Regular intake of omega-3s is linked to reduced risk of heart disease, improved cognitive function, and better joint health, making them vital for overall well-being.',
         image: null,
@@ -270,11 +280,10 @@ const Articles: ArticleTypes[] = [
   {
     id: 5,
     title: 'Caffeine: Effects, risks, and cautions',
-    description:
-      'Caffeine is a widely consumed natural stimulant, commonly found in coffee, tea, energy drinks, chocolate, and various other beverages. \
-      It is also added to some over-the-counter medications and dietary supplements due to its stimulating effects. Caffeine works by stimulating \
-      the central nervous system, which can help to increase alertness and combat fatigue. It is well-known for its ability to enhance mental focus, \
-      sharpen concentration, and elevate mood, making it a popular choice for those looking to boost productivity.',
+    description: {
+      short: 'Caffeine is a widely consumed natural stimulant, commonly found in coffee, tea, energy drinks, chocolate, and various other beverages.',
+      long: 'Caffeine is a widely consumed natural stimulant, commonly found in coffee, tea, energy drinks, chocolate, and various other beverages. It is also added to some over-the-counter medications and dietary supplements due to its stimulating effects. Caffeine works by stimulating the central nervous system, which can help to increase alertness and combat fatigue. It is well-known for its ability to enhance mental focus, sharpen concentration, and elevate mood, making it a popular choice for those looking to boost productivity.'
+    },
     image: '/images/blog/article6/image.webp',
     link: 'caffeine-effects-risks-cautions/',
     date: '2024-10-29 10:00:00UTC+1',
@@ -282,7 +291,7 @@ const Articles: ArticleTypes[] = [
     content: [
       {
         id: 0,
-        title: ' Caffeine: Benefits ',
+        title: 'Caffeine: Benefits',
         description:
           "Dr. Honaker talks to us about some of the benefits of having caffeine. A few things such as increase of IQ, reduction in alzheimer's and even possible reduction in risks of cancer.",
         image: null,

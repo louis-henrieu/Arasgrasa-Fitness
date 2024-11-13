@@ -13,7 +13,20 @@ const BlogPost = ({ article }: { article: ArticleTypes }) => {
     <Fragment>
       <Head>
         <title>{article.title + "- Arasgrasa Fitness"}</title>
-        <meta name="description" content={article.description} />
+        <meta name="description" content={article.description.short} />
+        <link rel="canonical" href={`https://arasgrasa.fr/blog/${article.link}`} />
+        <meta property="og:title" content={`${article.title} - Arasgrasa Fitness`} />
+        <meta property="og:description" content={article.description.short} />
+        <meta property="og:url" content={`https://arasgrasa.fr/blog/${article.link}`} />
+        <meta property="og:image" content={`https://arasgrasa.fr${article.image}`} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content={`${article.title} - Arasgrasa Fitness`} />
+        <meta property="twitter:description" content={article.description.short} />
+        <meta property="twitter:image" content={`https://arasgrasa.fr${article.image}`} />
+        <meta property="twitter:url" content={`https://arasgrasa.fr/blog/${article.link}`} />
+        <meta property="article:published_time" content={article.date} />
+        <meta property="article:author" content={article.author} />
       </Head>
       <Article article={article} />
     </Fragment>

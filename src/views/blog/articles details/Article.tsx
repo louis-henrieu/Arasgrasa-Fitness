@@ -9,13 +9,13 @@ import { ArticleSchemaOrg } from 'src/views/schema-org';
 const Article = ({ article }: { article: ArticleTypes }) => {
   return (
     <div>
-      <ArticleSchemaOrg title={article.title} description={article.description} image={article.image} date={article.date} author={article.author} link={article.link} content={article.content.map((content) => content.description).join(' ')} />
+      <ArticleSchemaOrg title={article.title} description={article.description.long} image={article.image} date={article.date} author={article.author} link={article.link} content={article.content.map((content) => content.description).join(' ')} />
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <h1 style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>{article.title}</h1>
         <img style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '95%', maxHeight: '70vh' }} src={article.image} alt={article.title} />
       </div>
       <div>
-        <p>{article.description}</p>
+        <p>{article.description.long}</p>
         {article.content.map((content) => {
           if (content.type === ContentArticleEnum.Image) {
             return <ImageArticle key={content.id} article={article} index={content.id} />;
