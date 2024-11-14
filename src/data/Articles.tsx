@@ -320,7 +320,7 @@ const Articles: ArticleTypes[] = [
     id: 6,
     title: 'Common Fitness Myths Debunked: What You Need to Know',
     description: {
-      short: 'When it comes to fitness, there are countless myths floating around that can be misleading or even hinder your progress. These myths often lead to confusion and frustration, making it harder to achieve your fitness goals. Whether you’re new to working out or an experienced gym-goer, it’s important to separate fact from fiction to ensure you’re making the best choices for your body. Today, we’re setting the record straight on some of the most common misconceptions about working out and getting healthy.',
+      short: 'When it comes to fitness, there are countless myths floating around that can be misleading or even hinder your progress.',
       long: 'When it comes to fitness, there are countless myths floating around that can be misleading or even hinder your progress. Today, we’re setting the record straight on some of the most common misconceptions about working out and getting healthy.'
     },
     image: '/images/blog/article7/fitness-myths.webp',
