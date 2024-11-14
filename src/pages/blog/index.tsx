@@ -20,6 +20,9 @@ const BlogList = () => {
         <meta property="og:url" content="https://arasgrasa.fr/blog/" />
         <meta property="twitter:description" content="Read the latest articles on fitness, health, and wellness on our blog. Stay updated with tips, guides, and expert advice." />
         <meta property="twitter:url" content="https://arasgrasa.fr/blog/" />
+        <link rel="alternate" href="https://arasgrasa.fr/blog/" hrefLang="en"/>
+        <link rel="alternate" href="https://arasgrasa.fr/blog/" hrefLang="fr"/>
+        <link rel="alternate" href="https://arasgrasa.fr/blog/" hrefLang="x-default"/>
       </Head>
       <h1>Blog List</h1>
       <Grid container spacing={6}>

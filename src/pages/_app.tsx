@@ -131,6 +131,9 @@ const App = (props: ExtendedAppProps) => {
           <meta name="twitter:description" content="The official Arasgrasa Fitness shop, the elf's leading energy drink for sport performance and sport nutrition with vitamins is happy to welcome you. Enjoy your workout with our eco-friendly products."/>
           <meta name="twitter:image" content="https://arasgrasa.fr/images/flavicon.webp"/>
           <link rel='icon' href='/images/flavicon.webp' type='image/webp' />
+          <link rel='alternate' href='https://arasgrasa.fr/' hrefLang='en' />
+          <link rel='alternate' href='https://arasgrasa.fr/' hrefLang='fr' />
+          <link rel='alternate' href='https://arasgrasa.fr/' hrefLang='x-default' />
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=G-MEWLRD35LB`}
             strategy="afterInteractive"

@@ -12,6 +12,9 @@ const AboutUs = () => {
     <meta property="og:image" content="https://arasgrasa.fr/images/flavicon.webp" />
     <meta property="og:url" content="https://arasgrasa.fr/about-us/" />
     <meta property="twitter:url" content="https://arasgrasa.fr/about-us/" />
+    <link rel="alternate" href="https://arasgrasa.fr/about-us/" hrefLang="en"/>
+    <link rel="alternate" href="https://arasgrasa.fr/about-us/" hrefLang="fr"/>
+    <link rel="alternate" href="https://arasgrasa.fr/about-us/" hrefLang="x-default"/>
     </Head>
     <Container sx={{ padding: '2rem' }}>
       <Box sx={{ mb: '2rem', textAlign: 'center' }}>

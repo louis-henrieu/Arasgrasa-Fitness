@@ -20,6 +20,9 @@ const ProductsList = () => {
         <meta property="og:url" content="https://arasgrasa.fr/product/" />
         <meta property="twitter:description" content="Discover top energy drinks, protein powders, and vitamins for elves. Natural ingredients to boost energy and performance." />
         <meta property="twitter:url" content="https://arasgrasa.fr/product/" />
+        <link rel="alternate" href="https://arasgrasa.fr/product/" hrefLang="en" />
+        <link rel="alternate" href="https://arasgrasa.fr/product/" hrefLang="fr" />
+        <link rel="alternate" href="https://arasgrasa.fr/product/" hrefLang="x-default" />
       </Head>
       <h1>Products List</h1>
       <Grid container spacing={6}>
