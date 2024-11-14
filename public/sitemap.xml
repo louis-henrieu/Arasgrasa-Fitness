@@ -79,6 +79,10 @@
     <priority>0.60</priority>
   </url>
   <url>
+    <loc>https://arasgrasa.fr/product/protein-bar/</loc>
+    <lastmod>2024-11-08T13:45:28+00:00</lastmod>
+    <priority>0.60</priority>
+  <url>
     <loc>https://arasgrasa.fr/blog/benefits-arasgrasa-plant/</loc>
     <lastmod>2024-11-08T13:45:28+00:00</lastmod>
     <priority>0.60</priority>
@@ -108,4 +112,8 @@
     <lastmod>2024-11-08T13:45:28+00:00</lastmod>
     <priority>0.60</priority>
   </url>
+  <url>
+    <loc>https://arasgrasa.fr/blog/fitness-myths-debunked/</loc>
+    <lastmod>2024-11-08T13:45:28+00:00</lastmod>
+    <priority>0.60</priority>
 </urlset>
