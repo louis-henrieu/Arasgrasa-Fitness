@@ -47,6 +47,9 @@ const ContactUs = () => {
       <meta property="og:url" content="https://arasgrasa.fr/contact/" />
       <meta property="twitter:description" content="Get in touch with Arasgrasa Fitness. If you have any questions, feel free to contact us via phone or email. Follow us on social media for updates." />
       <meta property="twitter:url" content="https://arasgrasa.fr/contact/" />
+      <link rel="alternate" href="https://arasgrasa.fr/contact/" hrefLang="en"/>
+      <link rel="alternate" href="https://arasgrasa.fr/contact/" hrefLang="fr"/>
+      <link rel="alternate" href="https://arasgrasa.fr/contact/" hrefLang="x-default"/>
     </Head>
     <Container sx={{ padding: '2rem' }}>
         <Box sx={{ mt: 7, textAlign: 'center' }}>

@@ -23,6 +23,9 @@ const Product = ({ product }: { product: ProductTypes }) => {
         <meta property="twitter:description" content={product.description.short} />
         <meta property="twitter:image" content={`https://arasgrasa.fr${product.image}`} />
         <meta property="twitter:url" content={`https://arasgrasa.fr/product/${product.link}`} />
+        <link rel="alternate" href={`https://arasgrasa.fr/product/${product.link}`} hrefLang="en"/>
+        <link rel="alternate" href={`https://arasgrasa.fr/product/${product.link}`} hrefLang="fr"/>
+        <link rel="alternate" href={`https://arasgrasa.fr/product/${product.link}`} hrefLang="x-default"/>
       </Head>
       <ProductDetail product={product} />
     </Fragment>

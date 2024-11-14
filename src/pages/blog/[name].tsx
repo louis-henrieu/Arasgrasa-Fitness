@@ -27,6 +27,10 @@ const BlogPost = ({ article }: { article: ArticleTypes }) => {
         <meta property="twitter:url" content={`https://arasgrasa.fr/blog/${article.link}`} />
         <meta property="article:published_time" content={article.date} />
         <meta property="article:author" content={article.author} />
+        <meta property="twitter:url" content={`https://arasgrasa.fr/blog/${article.link}`} />
+        <link rel="alternate" href={`https://arasgrasa.fr/blog/${article.link}`} hrefLang="en"/>
+        <link rel="alternate" href={`https://arasgrasa.fr/blog/${article.link}`} hrefLang="fr"/>
+        <link rel="alternate" href={`https://arasgrasa.fr/blog/${article.link}`} hrefLang="x-default"/>
       </Head>
       <Article article={article} />
     </Fragment>
