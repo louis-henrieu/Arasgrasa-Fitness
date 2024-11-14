@@ -110,9 +110,9 @@ const ContactUs = () => {
           </Typography>
           <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <Box sx={{ ml: '1rem' }}>
-              <Typography href="https://facebook.com" target="_blank" variant='body2' component={StyledCompanyName} sx={{ marginRight: '10px' }}>Facebook</Typography>
+              <Typography href="https://www.facebook.com/groups/8830195950428499/" target="_blank" variant='body2' component={StyledCompanyName} sx={{ marginRight: '10px' }}>Facebook</Typography>
               <br />
-              <Typography href="https://twitter.com" target="_blank" variant='body2' component={StyledCompanyName} sx={{ marginRight: '10px' }}>Twitter</Typography>
+              <Typography href="https://x.com/arasgrasa" target="_blank" variant='body2' component={StyledCompanyName} sx={{ marginRight: '10px' }}>Twitter</Typography>
               <br />
               <Typography href="https://instagram.com/arasgrasa" variant='body2' target="_blank" component={StyledCompanyName}>Instagram</Typography>
             </Box>

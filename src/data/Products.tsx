@@ -734,6 +734,79 @@ const Products: ProductTypes[] = [
         rating: 4
       }
     ]
+  },
+  {
+    id: 9,
+    title: 'Protein Bar',
+    description: {
+      short: 'Protein Bar is a great snack for those who want to stay healthy and active.',
+      long: 'Protein Bar is a great snack for those who want to stay healthy and active. It is made from natural ingredients and has no artificial flavors or colors. It is also low in calories and sugar, so you can enjoy it without feeling guilty. Protein Bar is a great way to get the energy you need to stay active and healthy.'
+    },
+    composition: ['Cherry', 'Apple', 'Blueberry', 'Pineapple'],
+    image: '/images/product/arasgrasa_protein_bar.webp',
+    link: 'protein-bar/',
+    price: 2.95,
+    stock: 10,
+    rating: 5,
+    category: 'Food',
+    choice: [
+      {
+        id: 0,
+        name: 'Flavor',
+        value: ['Cherry', 'Apple', 'Blueberry', 'Chocolate']
+      },
+      {
+        id: 1,
+        name: 'Quantity',
+        value: ['10', '20', '30']
+      }
+    ],
+    reviews: [
+      {
+        id: 0,
+        name: 'John Doe',
+        date: '2024-06-12',
+        image: '/images/avatars/7.webp',
+        comment: 'Very good flavor',
+        rating: 4
+      },
+      {
+        id: 1,
+        name: 'Jane Doe',
+        date: '2024-08-20',
+        image: '/images/avatars/8.webp',
+        comment: 'I love it',
+        rating: 5
+      },
+      {
+        id: 2,
+        name: 'Sam Smith',
+        date: '2024-10-01',
+        image: '/images/avatars/12.webp',
+        comment: 'Great product',
+        rating: 4
+      }
+    ],
+    others: [
+      {
+        id: 0,
+        title: 'Protein Shake',
+        description: 'Protein Shake is a great snack for those who want to stay healthy and active.',
+        link: 'protein-shake/',
+        image: '/images/product/image8.webp',
+        price: 9.95,
+        rating: 4.5
+      },
+      {
+        id: 1,
+        title: 'Protein Smoothie',
+        description: 'Protein Smoothie is a great snack for those who want to stay healthy and active.',
+        link: 'protein-smoothie/',
+        image: '/images/product/image7.webp',
+        price: 8.95,
+        rating: 4
+      }
+    ]
   }
 ]
 
